@@ -1,0 +1,1442 @@
+[
+  {
+    "id": "3d403050-cbdb-4942-a52d-f305685ffdc4",
+    "title": "[Flink] Late Event Handling with WatermarkStrategy and Allowed Lateness",
+    "short_description": "Flink Late Event 완화/핸들링을 위한 WatermarkStrategy 전략과 Allowed Lateness 옵션",
+    "thumbnail": "https://velog.velcdn.com/images/yulmwu/post/855eb79d-3353-4691-bb93-b48e4d866474/image.png",
+    "user": {
+      "id": "043a0620-778e-43f4-94cd-c7d894cd0736",
+      "username": "yulmwu",
+      "profile": {
+        "id": "19d152cc-d01d-4823-b7a7-ed2072c5ca0a",
+        "thumbnail": "https://velog.velcdn.com/images/yulmwu/profile/b07f79a0-c4e0-4cf7-bf1f-ab1d5778444f/image.png",
+        "display_name": "Kim Jun Young"
+      }
+    },
+    "series": {
+      "name": "Data Streaming",
+      "url_slug": "data-streaming"
+    },
+    "url_slug": "flink-late-event-handling",
+    "released_at": "2026-01-21T12:45:55.620Z",
+    "updated_at": "2026-01-24T16:04:27.027Z",
+    "comments_count": 0,
+    "tags": [
+      "flink"
+    ],
+    "is_private": false,
+    "likes": 0
+  },
+  {
+    "id": "31c155d9-4c37-45e1-acf6-42e0d7aad634",
+    "title": "[일상] 라디오는 사드세요..... 제발",
+    "short_description": "다만 낭만은 있음.",
+    "thumbnail": "https://velog.velcdn.com/images/yulmwu/post/51e96ca9-86f1-497f-8d9b-389abba1b8a4/image.png",
+    "user": {
+      "id": "043a0620-778e-43f4-94cd-c7d894cd0736",
+      "username": "yulmwu",
+      "profile": {
+        "id": "19d152cc-d01d-4823-b7a7-ed2072c5ca0a",
+        "thumbnail": "https://velog.velcdn.com/images/yulmwu/profile/b07f79a0-c4e0-4cf7-bf1f-ab1d5778444f/image.png",
+        "display_name": "Kim Jun Young"
+      }
+    },
+    "series": {
+      "name": "Misc",
+      "url_slug": "misc"
+    },
+    "url_slug": "misc-diy-radio-kit",
+    "released_at": "2026-01-18T13:51:16.486Z",
+    "updated_at": "2026-01-24T14:33:32.112Z",
+    "comments_count": 0,
+    "tags": [
+      "일상"
+    ],
+    "is_private": false,
+    "likes": 0
+  },
+  {
+    "id": "6bf28cb7-821b-495a-81ca-779e4a991537",
+    "title": "[AWS Challenge] 2025 지방기능경기대회 제 2과제 풀이",
+    "short_description": "2025년도 지방기능경기대회 클라우드 컴퓨팅 직종, 제 2과제 풀이 및 풀이 설명",
+    "thumbnail": "https://velog.velcdn.com/images/yulmwu/post/f915915b-754d-438e-b970-51215ad48f67/image.png",
+    "user": {
+      "id": "043a0620-778e-43f4-94cd-c7d894cd0736",
+      "username": "yulmwu",
+      "profile": {
+        "id": "19d152cc-d01d-4823-b7a7-ed2072c5ca0a",
+        "thumbnail": "https://velog.velcdn.com/images/yulmwu/profile/b07f79a0-c4e0-4cf7-bf1f-ab1d5778444f/image.png",
+        "display_name": "Kim Jun Young"
+      }
+    },
+    "series": {
+      "name": "AWS",
+      "url_slug": "AWS"
+    },
+    "url_slug": "aws-challenge-2025-2",
+    "released_at": "2026-01-18T01:16:32.279Z",
+    "updated_at": "2026-01-26T11:01:41.057Z",
+    "comments_count": 0,
+    "tags": [
+      "aws"
+    ],
+    "is_private": false,
+    "likes": 0
+  },
+  {
+    "id": "dc232f42-34c4-4048-bb9d-c2f586cd6a8f",
+    "title": "[Kubernetes] PaC(Policy as Code) with OPA Gatekeeper and Kyverno",
+    "short_description": "OPA Gatekeeper와 Kyverno를 통한 Kubernetes PaC(Policy as Code) 구축하기",
+    "thumbnail": "https://velog.velcdn.com/images/yulmwu/post/df0ca1ee-17be-4fce-8ac4-c8a71b1e91c8/image.png",
+    "user": {
+      "id": "043a0620-778e-43f4-94cd-c7d894cd0736",
+      "username": "yulmwu",
+      "profile": {
+        "id": "19d152cc-d01d-4823-b7a7-ed2072c5ca0a",
+        "thumbnail": "https://velog.velcdn.com/images/yulmwu/profile/b07f79a0-c4e0-4cf7-bf1f-ab1d5778444f/image.png",
+        "display_name": "Kim Jun Young"
+      }
+    },
+    "series": {
+      "name": "Kubernetes",
+      "url_slug": "kubernetes"
+    },
+    "url_slug": "kubernetes-pac-with-gatekeeper-and-kyverno",
+    "released_at": "2026-01-13T12:30:29.037Z",
+    "updated_at": "2026-01-20T08:51:40.347Z",
+    "comments_count": 0,
+    "tags": [
+      "kubernetes"
+    ],
+    "is_private": false,
+    "likes": 0
+  },
+  {
+    "id": "c66c4b97-6bc0-48c9-bb3e-766abf9e84a1",
+    "title": "[Kubernetes w/ EKS] Pod AutoScaling with KEDA (Event Driven), with AWS SQS",
+    "short_description": "KEDA를 통한 쿠버네티스 Event Driven 파드 오토스케일링 (with Kafka, SQS)",
+    "thumbnail": "https://velog.velcdn.com/images/yulmwu/post/757209f4-a04d-479e-b9cd-542911752c46/image.png",
+    "user": {
+      "id": "043a0620-778e-43f4-94cd-c7d894cd0736",
+      "username": "yulmwu",
+      "profile": {
+        "id": "19d152cc-d01d-4823-b7a7-ed2072c5ca0a",
+        "thumbnail": "https://velog.velcdn.com/images/yulmwu/profile/b07f79a0-c4e0-4cf7-bf1f-ab1d5778444f/image.png",
+        "display_name": "Kim Jun Young"
+      }
+    },
+    "series": {
+      "name": "Kubernetes",
+      "url_slug": "kubernetes"
+    },
+    "url_slug": "kubernetes-keda",
+    "released_at": "2026-01-10T02:35:23.258Z",
+    "updated_at": "2026-01-26T11:46:35.580Z",
+    "comments_count": 0,
+    "tags": [
+      "kubernetes"
+    ],
+    "is_private": false,
+    "likes": 0
+  },
+  {
+    "id": "1ab41f2f-6245-42b2-a820-dc670a340122",
+    "title": "[Kubernetes w/ EKS] Managing TLS/SSL Certificates with cert-manager",
+    "short_description": "cert-manager를 통한 쿠버네티스 TLS/SSL 인증서 관리 (Feat. Let's Encrypt, DNS-01 ACME 및 AWS Route53 연동 실습)",
+    "thumbnail": "https://velog.velcdn.com/images/yulmwu/post/ed9e47c3-feee-4e0c-84bb-62105c58c86d/image.png",
+    "user": {
+      "id": "043a0620-778e-43f4-94cd-c7d894cd0736",
+      "username": "yulmwu",
+      "profile": {
+        "id": "19d152cc-d01d-4823-b7a7-ed2072c5ca0a",
+        "thumbnail": "https://velog.velcdn.com/images/yulmwu/profile/b07f79a0-c4e0-4cf7-bf1f-ab1d5778444f/image.png",
+        "display_name": "Kim Jun Young"
+      }
+    },
+    "series": {
+      "name": "Kubernetes",
+      "url_slug": "kubernetes"
+    },
+    "url_slug": "kubernetes-cert-manager",
+    "released_at": "2026-01-09T06:37:47.568Z",
+    "updated_at": "2026-01-22T08:23:12.759Z",
+    "comments_count": 0,
+    "tags": [
+      "kubernetes"
+    ],
+    "is_private": false,
+    "likes": 0
+  },
+  {
+    "id": "0f2f46c4-e619-4e8e-8af5-8659c2e5f717",
+    "title": "[AWS Networking] EC2 Source/Destination Checking (Feat. NAT Instance)",
+    "short_description": "AWS EC2의 Source/Destination Check 옵션 (Feat. EC2 NAT Instance)",
+    "thumbnail": "https://velog.velcdn.com/images/yulmwu/post/32cd1e85-00e1-4026-8984-e20e1e16552c/image.png",
+    "user": {
+      "id": "043a0620-778e-43f4-94cd-c7d894cd0736",
+      "username": "yulmwu",
+      "profile": {
+        "id": "19d152cc-d01d-4823-b7a7-ed2072c5ca0a",
+        "thumbnail": "https://velog.velcdn.com/images/yulmwu/profile/b07f79a0-c4e0-4cf7-bf1f-ab1d5778444f/image.png",
+        "display_name": "Kim Jun Young"
+      }
+    },
+    "series": {
+      "name": "AWS",
+      "url_slug": "AWS"
+    },
+    "url_slug": "aws-source-destination-check",
+    "released_at": "2026-01-04T00:52:31.030Z",
+    "updated_at": "2026-01-18T07:59:40.317Z",
+    "comments_count": 0,
+    "tags": [
+      "aws"
+    ],
+    "is_private": false,
+    "likes": 0
+  },
+  {
+    "id": "be407bfa-796c-4268-ab66-287f33424064",
+    "title": "[회고록] 굿바이, 2025",
+    "short_description": "익숙했던 2025년을 떠나보내며, 세명컴퓨터고등학교에서의 이야기",
+    "thumbnail": "https://velog.velcdn.com/images/yulmwu/post/5ba7f24b-8fe5-4a40-a99c-b3cc6880822d/image.png",
+    "user": {
+      "id": "043a0620-778e-43f4-94cd-c7d894cd0736",
+      "username": "yulmwu",
+      "profile": {
+        "id": "19d152cc-d01d-4823-b7a7-ed2072c5ca0a",
+        "thumbnail": "https://velog.velcdn.com/images/yulmwu/profile/b07f79a0-c4e0-4cf7-bf1f-ab1d5778444f/image.png",
+        "display_name": "Kim Jun Young"
+      }
+    },
+    "series": {
+      "name": "Misc",
+      "url_slug": "misc"
+    },
+    "url_slug": "memoir-2025",
+    "released_at": "2025-12-31T10:58:25.434Z",
+    "updated_at": "2026-01-20T08:52:12.245Z",
+    "comments_count": 0,
+    "tags": [
+      "일상",
+      "회고록"
+    ],
+    "is_private": false,
+    "likes": 1
+  },
+  {
+    "id": "6b5d703e-51b5-4534-b6b8-917b43ed35e8",
+    "title": "[AWS Streaming] UI/UX Click Heatmap with AWS KDS, MSF, Glue, and Athena Pipeline",
+    "short_description": "AWS Kinesis Data Streams, Flink, Glue 및 Athena를 통한 UI/UX 클릭 히트맵 파이프라인 구축하기 (PoC/MVP)",
+    "thumbnail": "https://velog.velcdn.com/images/yulmwu/post/9c122d8f-2eda-427e-8b29-1345b615b353/image.png",
+    "user": {
+      "id": "043a0620-778e-43f4-94cd-c7d894cd0736",
+      "username": "yulmwu",
+      "profile": {
+        "id": "19d152cc-d01d-4823-b7a7-ed2072c5ca0a",
+        "thumbnail": "https://velog.velcdn.com/images/yulmwu/profile/b07f79a0-c4e0-4cf7-bf1f-ab1d5778444f/image.png",
+        "display_name": "Kim Jun Young"
+      }
+    },
+    "series": {
+      "name": "AWS",
+      "url_slug": "AWS"
+    },
+    "url_slug": "aws-click-heatmap-with-kds-msf-glue-athena",
+    "released_at": "2025-12-28T10:51:06.968Z",
+    "updated_at": "2026-01-23T01:31:41.243Z",
+    "comments_count": 0,
+    "tags": [
+      "aws"
+    ],
+    "is_private": false,
+    "likes": 0
+  },
+  {
+    "id": "00e2b576-85d0-4c48-a7b0-b9952f238273",
+    "title": "[Cloudflare] DDoS protection with Cloudflare (Feat. AWS Shield)",
+    "short_description": "Cloudflare를 사용한 DDoS 방어 (Feat. AWS Shield)",
+    "thumbnail": "https://velog.velcdn.com/images/yulmwu/post/aba8b120-d528-460c-a117-2998fc8a35c5/image.png",
+    "user": {
+      "id": "043a0620-778e-43f4-94cd-c7d894cd0736",
+      "username": "yulmwu",
+      "profile": {
+        "id": "19d152cc-d01d-4823-b7a7-ed2072c5ca0a",
+        "thumbnail": "https://velog.velcdn.com/images/yulmwu/profile/b07f79a0-c4e0-4cf7-bf1f-ab1d5778444f/image.png",
+        "display_name": "Kim Jun Young"
+      }
+    },
+    "series": {
+      "name": "Cloudflare",
+      "url_slug": "cloudflare"
+    },
+    "url_slug": "cloudflare-ddos-protection",
+    "released_at": "2025-12-21T12:04:19.600Z",
+    "updated_at": "2026-01-25T08:23:37.544Z",
+    "comments_count": 0,
+    "tags": [
+      "Cloudflare",
+      "aws",
+      "security"
+    ],
+    "is_private": false,
+    "likes": 0
+  },
+  {
+    "id": "caa9c16a-5c5c-45b5-a4cd-2ca6b2299010",
+    "title": "[AWS Networking] Connecting On-Premise to AWS VPC with Site-to-Site VPN",
+    "short_description": "AWS Site to Site VPN을 통해 온프레미스 네트워크 및 클라우드 네트워크 연결하기 (with Transit Gateway)",
+    "thumbnail": "https://velog.velcdn.com/images/yulmwu/post/7c6c1b44-4ccc-4b88-85db-d6142ee99d8d/image.png",
+    "user": {
+      "id": "043a0620-778e-43f4-94cd-c7d894cd0736",
+      "username": "yulmwu",
+      "profile": {
+        "id": "19d152cc-d01d-4823-b7a7-ed2072c5ca0a",
+        "thumbnail": "https://velog.velcdn.com/images/yulmwu/profile/b07f79a0-c4e0-4cf7-bf1f-ab1d5778444f/image.png",
+        "display_name": "Kim Jun Young"
+      }
+    },
+    "series": {
+      "name": "AWS",
+      "url_slug": "AWS"
+    },
+    "url_slug": "aws-s2s-vpn",
+    "released_at": "2025-12-16T03:00:32.921Z",
+    "updated_at": "2026-01-18T16:23:33.979Z",
+    "comments_count": 0,
+    "tags": [
+      "aws",
+      "networking"
+    ],
+    "is_private": false,
+    "likes": 0
+  },
+  {
+    "id": "6733d119-4251-4c53-8a24-728f65415972",
+    "title": "[Terraform CI/CD] Terraform CI/CD Pipeline with Github Actions",
+    "short_description": "Github Actions를 통한 Terraform CI/CD 파이프라인 구축",
+    "thumbnail": "https://velog.velcdn.com/images/yulmwu/post/1133dae5-dd6d-41d1-9d56-eefd99b525a1/image.png",
+    "user": {
+      "id": "043a0620-778e-43f4-94cd-c7d894cd0736",
+      "username": "yulmwu",
+      "profile": {
+        "id": "19d152cc-d01d-4823-b7a7-ed2072c5ca0a",
+        "thumbnail": "https://velog.velcdn.com/images/yulmwu/profile/b07f79a0-c4e0-4cf7-bf1f-ab1d5778444f/image.png",
+        "display_name": "Kim Jun Young"
+      }
+    },
+    "series": {
+      "name": "Terraform",
+      "url_slug": "terraform"
+    },
+    "url_slug": "terraform-ci-cd-with-github-actions",
+    "released_at": "2025-12-12T08:59:59.463Z",
+    "updated_at": "2026-01-23T05:46:58.788Z",
+    "comments_count": 0,
+    "tags": [
+      "CI/CD",
+      "aws",
+      "terraform"
+    ],
+    "is_private": false,
+    "likes": 0
+  },
+  {
+    "id": "8c1dffbc-cc78-4b6a-9b93-8038dca1d913",
+    "title": "[Kubernetes] Garbage Collection: OwnerReference, Orphaning and Finalizer",
+    "short_description": "쿠버네티스의 GC(Garbage Collection)와 OwnerReferences, Finalizer",
+    "thumbnail": "https://velog.velcdn.com/images/yulmwu/post/f2f5df18-287e-4f8e-886e-cda50a4d79f4/image.png",
+    "user": {
+      "id": "043a0620-778e-43f4-94cd-c7d894cd0736",
+      "username": "yulmwu",
+      "profile": {
+        "id": "19d152cc-d01d-4823-b7a7-ed2072c5ca0a",
+        "thumbnail": "https://velog.velcdn.com/images/yulmwu/profile/b07f79a0-c4e0-4cf7-bf1f-ab1d5778444f/image.png",
+        "display_name": "Kim Jun Young"
+      }
+    },
+    "series": {
+      "name": "Kubernetes",
+      "url_slug": "kubernetes"
+    },
+    "url_slug": "kubernetes-gc-ownerreferences-finalizer",
+    "released_at": "2025-12-09T03:03:45.564Z",
+    "updated_at": "2026-01-14T13:18:24.518Z",
+    "comments_count": 0,
+    "tags": [
+      "kubernetes"
+    ],
+    "is_private": false,
+    "likes": 0
+  },
+  {
+    "id": "73c3098e-1a39-44eb-85fb-c465dcdd6db6",
+    "title": "[Kubernetes CI/CD] ArgoCD + CI with Github Actions and Kind",
+    "short_description": "Github Actions 및 Kind를 통한 쿠버네티스 ArgoCD CI(Continuous integration) 구성하기",
+    "thumbnail": "https://velog.velcdn.com/images/yulmwu/post/fac03422-b7b3-4816-9815-f230d9eaec94/image.png",
+    "user": {
+      "id": "043a0620-778e-43f4-94cd-c7d894cd0736",
+      "username": "yulmwu",
+      "profile": {
+        "id": "19d152cc-d01d-4823-b7a7-ed2072c5ca0a",
+        "thumbnail": "https://velog.velcdn.com/images/yulmwu/profile/b07f79a0-c4e0-4cf7-bf1f-ab1d5778444f/image.png",
+        "display_name": "Kim Jun Young"
+      }
+    },
+    "series": {
+      "name": "Kubernetes",
+      "url_slug": "kubernetes"
+    },
+    "url_slug": "kubernetes-argocd-ci",
+    "released_at": "2025-12-06T09:52:15.245Z",
+    "updated_at": "2026-01-26T00:59:54.483Z",
+    "comments_count": 0,
+    "tags": [
+      "CI/CD",
+      "argocd",
+      "kubernetes"
+    ],
+    "is_private": false,
+    "likes": 0
+  },
+  {
+    "id": "90eeaab4-42e0-4a0f-a8e5-a1ff5d5d9609",
+    "title": "[Kubernetes] CSA(Client Side Apply, last-applied) and SSA(Server Side Apply) (Feat. Helm 4)",
+    "short_description": "쿠버네티스의 CSA(Client Side Apply)와 SSA(Server Side Apply), 필드 소유권에 대하여 (Feat. Helm 4.0 릴리즈)",
+    "thumbnail": "https://velog.velcdn.com/images/yulmwu/post/fc74f596-0d1d-4ea1-9994-34ce96016890/image.png",
+    "user": {
+      "id": "043a0620-778e-43f4-94cd-c7d894cd0736",
+      "username": "yulmwu",
+      "profile": {
+        "id": "19d152cc-d01d-4823-b7a7-ed2072c5ca0a",
+        "thumbnail": "https://velog.velcdn.com/images/yulmwu/profile/b07f79a0-c4e0-4cf7-bf1f-ab1d5778444f/image.png",
+        "display_name": "Kim Jun Young"
+      }
+    },
+    "series": {
+      "name": "Kubernetes",
+      "url_slug": "kubernetes"
+    },
+    "url_slug": "kubernetes-csa-ssa",
+    "released_at": "2025-12-04T07:28:55.187Z",
+    "updated_at": "2026-01-21T15:21:04.217Z",
+    "comments_count": 0,
+    "tags": [
+      "helm",
+      "kubernetes"
+    ],
+    "is_private": false,
+    "likes": 0
+  },
+  {
+    "id": "8fbae133-ee81-4e3b-9a7f-f3ce16a9a5c6",
+    "title": "[Kafka Producer] About Producer's Message Delivery Time ",
+    "short_description": "Kafka 프로듀서의 send(ProducerRecord) 호출 부터 브로커의 응답까지의 전송 시간에 대하여",
+    "thumbnail": "https://velog.velcdn.com/images/yulmwu/post/543ab1c6-8bf2-4d78-b1c4-3cf61268c4e7/image.png",
+    "user": {
+      "id": "043a0620-778e-43f4-94cd-c7d894cd0736",
+      "username": "yulmwu",
+      "profile": {
+        "id": "19d152cc-d01d-4823-b7a7-ed2072c5ca0a",
+        "thumbnail": "https://velog.velcdn.com/images/yulmwu/profile/b07f79a0-c4e0-4cf7-bf1f-ab1d5778444f/image.png",
+        "display_name": "Kim Jun Young"
+      }
+    },
+    "series": {
+      "name": "Data Streaming",
+      "url_slug": "data-streaming"
+    },
+    "url_slug": "kafka-producer-message-delivery-time",
+    "released_at": "2025-12-01T01:34:12.283Z",
+    "updated_at": "2026-01-22T02:38:56.774Z",
+    "comments_count": 0,
+    "tags": [
+      "kafka"
+    ],
+    "is_private": false,
+    "likes": 0
+  },
+  {
+    "id": "2e6624d0-aa55-464e-8510-cead1e38d434",
+    "title": "[Kubernetes] ServiceAccount, RBAC: AuthN/AuthZ for Kubernetes API",
+    "short_description": "Kubernetes API에 접근하기 위한 RBAC(Role Based Access Control) 기반 ServiceAccount",
+    "thumbnail": "https://velog.velcdn.com/images/yulmwu/post/1e3ad6f3-b062-4be2-960c-e075cd39f086/image.png",
+    "user": {
+      "id": "043a0620-778e-43f4-94cd-c7d894cd0736",
+      "username": "yulmwu",
+      "profile": {
+        "id": "19d152cc-d01d-4823-b7a7-ed2072c5ca0a",
+        "thumbnail": "https://velog.velcdn.com/images/yulmwu/profile/b07f79a0-c4e0-4cf7-bf1f-ab1d5778444f/image.png",
+        "display_name": "Kim Jun Young"
+      }
+    },
+    "series": {
+      "name": "Kubernetes",
+      "url_slug": "kubernetes"
+    },
+    "url_slug": "kubernetes-serviceaccount",
+    "released_at": "2025-11-30T11:18:59.974Z",
+    "updated_at": "2026-01-18T01:32:44.192Z",
+    "comments_count": 0,
+    "tags": [
+      "aws",
+      "kubernetes"
+    ],
+    "is_private": false,
+    "likes": 0
+  },
+  {
+    "id": "00bc493d-803b-42a2-aef2-85ae7d35d25e",
+    "title": "[Cloudflare] Expose local servers to the internet with Cloudflare Tunnel",
+    "short_description": "Cloudflare Tunnel을 통한 포트 포워딩이나 Public IP 없이 로컬 서버 인터넷에 노출시키기",
+    "thumbnail": "https://velog.velcdn.com/images/yulmwu/post/5ca3a3b3-2318-474e-bf0a-48c8e800f5fb/image.png",
+    "user": {
+      "id": "043a0620-778e-43f4-94cd-c7d894cd0736",
+      "username": "yulmwu",
+      "profile": {
+        "id": "19d152cc-d01d-4823-b7a7-ed2072c5ca0a",
+        "thumbnail": "https://velog.velcdn.com/images/yulmwu/profile/b07f79a0-c4e0-4cf7-bf1f-ab1d5778444f/image.png",
+        "display_name": "Kim Jun Young"
+      }
+    },
+    "series": {
+      "name": "Cloudflare",
+      "url_slug": "cloudflare"
+    },
+    "url_slug": "cloudflare-tunnel",
+    "released_at": "2025-11-25T12:54:10.291Z",
+    "updated_at": "2026-01-26T11:19:42.956Z",
+    "comments_count": 0,
+    "tags": [
+      "Cloudflare"
+    ],
+    "is_private": false,
+    "likes": 0
+  },
+  {
+    "id": "1e836747-b18b-469e-87c8-619887e60c6d",
+    "title": "[AWS Computing] Deploying a web service based on ECS Fargate and DynamoDB",
+    "short_description": "AWS ECR 및 ECS Fargate를 통한 웹 서비스 배포하기",
+    "thumbnail": "https://velog.velcdn.com/images/yulmwu/post/03f35947-a4bf-4db6-93ac-ce9abb3671b3/image.png",
+    "user": {
+      "id": "043a0620-778e-43f4-94cd-c7d894cd0736",
+      "username": "yulmwu",
+      "profile": {
+        "id": "19d152cc-d01d-4823-b7a7-ed2072c5ca0a",
+        "thumbnail": "https://velog.velcdn.com/images/yulmwu/profile/b07f79a0-c4e0-4cf7-bf1f-ab1d5778444f/image.png",
+        "display_name": "Kim Jun Young"
+      }
+    },
+    "series": {
+      "name": "AWS",
+      "url_slug": "AWS"
+    },
+    "url_slug": "aws-deploying-ecs-fargate-dynamodb",
+    "released_at": "2025-11-24T10:32:58.641Z",
+    "updated_at": "2026-01-13T04:04:47.016Z",
+    "comments_count": 0,
+    "tags": [
+      "aws"
+    ],
+    "is_private": false,
+    "likes": 0
+  },
+  {
+    "id": "57cbd6a4-871a-476c-a158-0bd1215e0713",
+    "title": "[Kubernetes w/ EKS] Cluster Autoscaling with CA",
+    "short_description": "CA를 통한 쿠버네티스(EKS) Cluster Autoscaling 구성하기",
+    "thumbnail": "https://velog.velcdn.com/images/yulmwu/post/1cd1c045-c587-4676-9a73-9998e40653a4/image.png",
+    "user": {
+      "id": "043a0620-778e-43f4-94cd-c7d894cd0736",
+      "username": "yulmwu",
+      "profile": {
+        "id": "19d152cc-d01d-4823-b7a7-ed2072c5ca0a",
+        "thumbnail": "https://velog.velcdn.com/images/yulmwu/profile/b07f79a0-c4e0-4cf7-bf1f-ab1d5778444f/image.png",
+        "display_name": "Kim Jun Young"
+      }
+    },
+    "series": {
+      "name": "Kubernetes",
+      "url_slug": "kubernetes"
+    },
+    "url_slug": "kubernetes-ca",
+    "released_at": "2025-11-23T23:30:46.163Z",
+    "updated_at": "2026-01-24T08:39:37.987Z",
+    "comments_count": 0,
+    "tags": [
+      "eks",
+      "kubernetes"
+    ],
+    "is_private": false,
+    "likes": 0
+  },
+  {
+    "id": "ce14b60a-0230-4c26-8db2-514c4bb6c19f",
+    "title": "[AWS Computing] Deploying 3 Tier Architecture (ALB, Bastion, RDS)",
+    "short_description": "AWS ALB - EC2 - RDS로 3 Tier 아키텍처 구현하기",
+    "thumbnail": "https://velog.velcdn.com/images/yulmwu/post/3000f078-adda-4b18-a327-2797ff77a593/image.png",
+    "user": {
+      "id": "043a0620-778e-43f4-94cd-c7d894cd0736",
+      "username": "yulmwu",
+      "profile": {
+        "id": "19d152cc-d01d-4823-b7a7-ed2072c5ca0a",
+        "thumbnail": "https://velog.velcdn.com/images/yulmwu/profile/b07f79a0-c4e0-4cf7-bf1f-ab1d5778444f/image.png",
+        "display_name": "Kim Jun Young"
+      }
+    },
+    "series": {
+      "name": "AWS",
+      "url_slug": "AWS"
+    },
+    "url_slug": "aws-deploying-3-tier-architecture",
+    "released_at": "2025-11-21T12:27:07.839Z",
+    "updated_at": "2026-01-26T03:30:49.010Z",
+    "comments_count": 0,
+    "tags": [
+      "aws"
+    ],
+    "is_private": false,
+    "likes": 0
+  },
+  {
+    "id": "b192b37c-12d2-4f80-a345-1ff202aa46e9",
+    "title": "[DB/SQL] Recursive CTE(Common Table Expression)을 통한 N+1 문제 개선해보기",
+    "short_description": "Recursive CTE를 통해 Directory Breadcrumb를 구현하면서 Depth 만큼의 N+1 문제 해결해보기",
+    "thumbnail": "https://velog.velcdn.com/images/yulmwu/post/a6f7b71c-0078-4c2a-8c79-70c50221cce6/image.png",
+    "user": {
+      "id": "043a0620-778e-43f4-94cd-c7d894cd0736",
+      "username": "yulmwu",
+      "profile": {
+        "id": "19d152cc-d01d-4823-b7a7-ed2072c5ca0a",
+        "thumbnail": "https://velog.velcdn.com/images/yulmwu/profile/b07f79a0-c4e0-4cf7-bf1f-ab1d5778444f/image.png",
+        "display_name": "Kim Jun Young"
+      }
+    },
+    "series": {
+      "name": "DB/SQL",
+      "url_slug": "database"
+    },
+    "url_slug": "db-recursive-cte-feat-breadcrumb",
+    "released_at": "2025-11-15T11:08:28.310Z",
+    "updated_at": "2026-01-18T16:23:44.354Z",
+    "comments_count": 0,
+    "tags": [
+      "PostgreSQL",
+      "db",
+      "sql",
+      "typeOrm"
+    ],
+    "is_private": false,
+    "likes": 0
+  },
+  {
+    "id": "980b2283-a062-4a55-bc1a-2bf69ffcc281",
+    "title": "[Kubernetes] Observability with Prometheus + Grafana ",
+    "short_description": "Prometheus와 Grafana를 통한 쿠버네티스 Observability 확보하기",
+    "thumbnail": "https://velog.velcdn.com/images/yulmwu/post/0ed850fd-7c6d-41cb-8e00-1491ae71a038/image.png",
+    "user": {
+      "id": "043a0620-778e-43f4-94cd-c7d894cd0736",
+      "username": "yulmwu",
+      "profile": {
+        "id": "19d152cc-d01d-4823-b7a7-ed2072c5ca0a",
+        "thumbnail": "https://velog.velcdn.com/images/yulmwu/profile/b07f79a0-c4e0-4cf7-bf1f-ab1d5778444f/image.png",
+        "display_name": "Kim Jun Young"
+      }
+    },
+    "series": {
+      "name": "Kubernetes",
+      "url_slug": "kubernetes"
+    },
+    "url_slug": "kubernetes-prometheus-grafana",
+    "released_at": "2025-11-06T12:42:55.584Z",
+    "updated_at": "2025-12-09T15:19:51.260Z",
+    "comments_count": 0,
+    "tags": [
+      "kubernetes"
+    ],
+    "is_private": false,
+    "likes": 0
+  },
+  {
+    "id": "1dd50a59-9422-4c2e-bee3-b7beda041a50",
+    "title": "[Kubernetes w/ EKS] Troubleshooting: Too many pods.",
+    "short_description": "FailedScheduling: Too many pods ??",
+    "thumbnail": "https://velog.velcdn.com/images/yulmwu/post/9f85b6e8-7e43-44d9-95e5-72fb71827c10/image.png",
+    "user": {
+      "id": "043a0620-778e-43f4-94cd-c7d894cd0736",
+      "username": "yulmwu",
+      "profile": {
+        "id": "19d152cc-d01d-4823-b7a7-ed2072c5ca0a",
+        "thumbnail": "https://velog.velcdn.com/images/yulmwu/profile/b07f79a0-c4e0-4cf7-bf1f-ab1d5778444f/image.png",
+        "display_name": "Kim Jun Young"
+      }
+    },
+    "series": {
+      "name": "Kubernetes",
+      "url_slug": "kubernetes"
+    },
+    "url_slug": "kubernetes-eks-max-pods",
+    "released_at": "2025-10-20T00:35:31.233Z",
+    "updated_at": "2026-01-24T09:21:54.597Z",
+    "comments_count": 0,
+    "tags": [
+      "TROUBLESHOOTING",
+      "eks",
+      "kubernetes"
+    ],
+    "is_private": false,
+    "likes": 0
+  },
+  {
+    "id": "a23da834-18e1-4a71-ba53-b71f7e4f24e6",
+    "title": "[Kubernetes] Service Mesh with Istio and Envoy Sidecar Proxy",
+    "short_description": "쿠버네티스에서 Istio 및 Envoy 사이드카 프록시를 통한 고급 서비스 메시 구성하기",
+    "thumbnail": "https://velog.velcdn.com/images/yulmwu/post/2bb0b0fa-8d8e-41fd-ac7c-dda7123035b6/image.png",
+    "user": {
+      "id": "043a0620-778e-43f4-94cd-c7d894cd0736",
+      "username": "yulmwu",
+      "profile": {
+        "id": "19d152cc-d01d-4823-b7a7-ed2072c5ca0a",
+        "thumbnail": "https://velog.velcdn.com/images/yulmwu/profile/b07f79a0-c4e0-4cf7-bf1f-ab1d5778444f/image.png",
+        "display_name": "Kim Jun Young"
+      }
+    },
+    "series": {
+      "name": "Kubernetes",
+      "url_slug": "kubernetes"
+    },
+    "url_slug": "kubernetes-istio-envoy",
+    "released_at": "2025-10-13T00:01:35.748Z",
+    "updated_at": "2026-01-23T20:37:18.131Z",
+    "comments_count": 0,
+    "tags": [
+      "kubernetes",
+      "networking"
+    ],
+    "is_private": false,
+    "likes": 0
+  },
+  {
+    "id": "984ad92e-de82-49f3-9fad-7ebf92eeb72c",
+    "title": "[Kubernetes CI/CD] GitOps with ArgoCD (Kustomize Demo) ",
+    "short_description": "ArgoCD를 통한 쿠버네티스 GitOps 구성 및 Kustomize 배포",
+    "thumbnail": "https://velog.velcdn.com/images/yulmwu/post/362701aa-e57e-44af-bcc6-6835b972ffe1/image.png",
+    "user": {
+      "id": "043a0620-778e-43f4-94cd-c7d894cd0736",
+      "username": "yulmwu",
+      "profile": {
+        "id": "19d152cc-d01d-4823-b7a7-ed2072c5ca0a",
+        "thumbnail": "https://velog.velcdn.com/images/yulmwu/profile/b07f79a0-c4e0-4cf7-bf1f-ab1d5778444f/image.png",
+        "display_name": "Kim Jun Young"
+      }
+    },
+    "series": {
+      "name": "Kubernetes",
+      "url_slug": "kubernetes"
+    },
+    "url_slug": "kubernetes-gitops-argocd",
+    "released_at": "2025-10-03T12:07:32.658Z",
+    "updated_at": "2026-01-22T09:07:31.827Z",
+    "comments_count": 0,
+    "tags": [
+      "CI/CD",
+      "argocd",
+      "kubernetes"
+    ],
+    "is_private": false,
+    "likes": 0
+  },
+  {
+    "id": "e1690792-e285-4693-baf6-d3eb9a1cd3c8",
+    "title": "[Kubernetes] Secret Encryption with Sealed Secrets",
+    "short_description": "Sealed Secrets를 통한 외부 시크릿 저장소 없이 암호화된 시크릿 사용 방법",
+    "thumbnail": "https://velog.velcdn.com/images/yulmwu/post/61cf1ac4-b0fd-4b04-9e14-ec5cad678f94/image.png",
+    "user": {
+      "id": "043a0620-778e-43f4-94cd-c7d894cd0736",
+      "username": "yulmwu",
+      "profile": {
+        "id": "19d152cc-d01d-4823-b7a7-ed2072c5ca0a",
+        "thumbnail": "https://velog.velcdn.com/images/yulmwu/profile/b07f79a0-c4e0-4cf7-bf1f-ab1d5778444f/image.png",
+        "display_name": "Kim Jun Young"
+      }
+    },
+    "series": {
+      "name": "Kubernetes",
+      "url_slug": "kubernetes"
+    },
+    "url_slug": "kubernetes-sealed-secrets",
+    "released_at": "2025-10-02T02:48:42.263Z",
+    "updated_at": "2026-01-23T15:53:23.968Z",
+    "comments_count": 0,
+    "tags": [
+      "kubernetes"
+    ],
+    "is_private": false,
+    "likes": 0
+  },
+  {
+    "id": "9c376664-28b1-4c74-84fc-22ae7763a818",
+    "title": "[Kubernetes] Operator Implemented using the Go language and Operator SDK",
+    "short_description": "Go 언어에서 Operator SDK를 통한 쿠버네티스 Operator 구현 실습",
+    "thumbnail": "https://velog.velcdn.com/images/yulmwu/post/39b38a14-5d57-4c6c-9058-3cfb407b06e0/image.png",
+    "user": {
+      "id": "043a0620-778e-43f4-94cd-c7d894cd0736",
+      "username": "yulmwu",
+      "profile": {
+        "id": "19d152cc-d01d-4823-b7a7-ed2072c5ca0a",
+        "thumbnail": "https://velog.velcdn.com/images/yulmwu/profile/b07f79a0-c4e0-4cf7-bf1f-ab1d5778444f/image.png",
+        "display_name": "Kim Jun Young"
+      }
+    },
+    "series": {
+      "name": "Kubernetes",
+      "url_slug": "kubernetes"
+    },
+    "url_slug": "kubernetes-operator-go",
+    "released_at": "2025-10-01T08:16:26.908Z",
+    "updated_at": "2026-01-22T11:45:58.722Z",
+    "comments_count": 0,
+    "tags": [
+      "kubernetes"
+    ],
+    "is_private": false,
+    "likes": 0
+  },
+  {
+    "id": "e2b54e74-22d3-4bcf-a97e-bcbbefd23fb8",
+    "title": "[Kubernetes] Operator and Operator Pattern",
+    "short_description": "쿠버네티스 Operator 패턴을 통한 Day 2 Operation 자동화",
+    "thumbnail": "https://velog.velcdn.com/images/yulmwu/post/957f9cf5-fcc0-40ff-9f73-190f939339db/image.png",
+    "user": {
+      "id": "043a0620-778e-43f4-94cd-c7d894cd0736",
+      "username": "yulmwu",
+      "profile": {
+        "id": "19d152cc-d01d-4823-b7a7-ed2072c5ca0a",
+        "thumbnail": "https://velog.velcdn.com/images/yulmwu/profile/b07f79a0-c4e0-4cf7-bf1f-ab1d5778444f/image.png",
+        "display_name": "Kim Jun Young"
+      }
+    },
+    "series": {
+      "name": "Kubernetes",
+      "url_slug": "kubernetes"
+    },
+    "url_slug": "kubernetes-operator",
+    "released_at": "2025-09-29T23:24:51.261Z",
+    "updated_at": "2026-01-22T01:16:36.105Z",
+    "comments_count": 0,
+    "tags": [
+      "kubernetes"
+    ],
+    "is_private": false,
+    "likes": 0
+  },
+  {
+    "id": "f4f9a961-1999-4498-89df-9aab5dd79309",
+    "title": "[Kubernetes] Pod Health Check with Readiness, Liveness Probes (Feat. Pod Lifecycle)",
+    "short_description": "Readiness Probe 및 Liveness Probe를 통한 파드 Health Checking (Feat. Pod LifeCycle)",
+    "thumbnail": "https://velog.velcdn.com/images/yulmwu/post/cb978bbb-53fe-4f97-a7b8-4aa32c45d320/image.png",
+    "user": {
+      "id": "043a0620-778e-43f4-94cd-c7d894cd0736",
+      "username": "yulmwu",
+      "profile": {
+        "id": "19d152cc-d01d-4823-b7a7-ed2072c5ca0a",
+        "thumbnail": "https://velog.velcdn.com/images/yulmwu/profile/b07f79a0-c4e0-4cf7-bf1f-ab1d5778444f/image.png",
+        "display_name": "Kim Jun Young"
+      }
+    },
+    "series": {
+      "name": "Kubernetes",
+      "url_slug": "kubernetes"
+    },
+    "url_slug": "kubernetes-pod-probe",
+    "released_at": "2025-09-26T08:51:23.736Z",
+    "updated_at": "2026-01-17T12:44:18.294Z",
+    "comments_count": 0,
+    "tags": [
+      "kubernetes"
+    ],
+    "is_private": false,
+    "likes": 0
+  },
+  {
+    "id": "339a1ca6-49de-40ad-97fe-632863992c56",
+    "title": "[Kubernetes w/ EKS] EKS Fargate Cluster",
+    "short_description": "AWS EC2 노드 프로비저닝 없이 EKS 클러스터 구성하기 (AWS Fargate)",
+    "thumbnail": "https://velog.velcdn.com/images/yulmwu/post/6f32010e-b81a-4d21-8e47-addeaa27e67b/image.png",
+    "user": {
+      "id": "043a0620-778e-43f4-94cd-c7d894cd0736",
+      "username": "yulmwu",
+      "profile": {
+        "id": "19d152cc-d01d-4823-b7a7-ed2072c5ca0a",
+        "thumbnail": "https://velog.velcdn.com/images/yulmwu/profile/b07f79a0-c4e0-4cf7-bf1f-ab1d5778444f/image.png",
+        "display_name": "Kim Jun Young"
+      }
+    },
+    "series": {
+      "name": "Kubernetes",
+      "url_slug": "kubernetes"
+    },
+    "url_slug": "kubernetes-eks-fargate",
+    "released_at": "2025-09-23T03:09:18.966Z",
+    "updated_at": "2026-01-21T00:48:02.371Z",
+    "comments_count": 0,
+    "tags": [
+      "aws",
+      "eks",
+      "kubernetes"
+    ],
+    "is_private": false,
+    "likes": 0
+  },
+  {
+    "id": "6727549a-5700-45f6-94fa-fc44adbcafb4",
+    "title": "[AWS Networking] VPC Peering, Transit Gateway and PrivateLink",
+    "short_description": "AWS VPC Peering, Transit Gateway 및 PrivateLink를 통한 다중 VPC/계정 간 네트워킹",
+    "thumbnail": "https://velog.velcdn.com/images/yulmwu/post/2e5a0cea-b832-4182-a666-3204e3b41993/image.png",
+    "user": {
+      "id": "043a0620-778e-43f4-94cd-c7d894cd0736",
+      "username": "yulmwu",
+      "profile": {
+        "id": "19d152cc-d01d-4823-b7a7-ed2072c5ca0a",
+        "thumbnail": "https://velog.velcdn.com/images/yulmwu/profile/b07f79a0-c4e0-4cf7-bf1f-ab1d5778444f/image.png",
+        "display_name": "Kim Jun Young"
+      }
+    },
+    "series": {
+      "name": "AWS",
+      "url_slug": "AWS"
+    },
+    "url_slug": "aws-vpc-peering-transit-privatelink",
+    "released_at": "2025-09-09T23:35:30.426Z",
+    "updated_at": "2026-01-23T20:37:15.882Z",
+    "comments_count": 0,
+    "tags": [
+      "aws",
+      "networking"
+    ],
+    "is_private": false,
+    "likes": 0
+  },
+  {
+    "id": "5be2dd76-80dc-48e4-8f66-806dd5607144",
+    "title": "[Kubernetes w/ EKS] Gateway API (Feat. AWS VPC Lattice)",
+    "short_description": "Ingress의 차세대, Gateway API 실습 및 AWS Lattice 개념",
+    "thumbnail": "https://velog.velcdn.com/images/yulmwu/post/8a056078-c706-40fe-a616-471ab411dc4a/image.png",
+    "user": {
+      "id": "043a0620-778e-43f4-94cd-c7d894cd0736",
+      "username": "yulmwu",
+      "profile": {
+        "id": "19d152cc-d01d-4823-b7a7-ed2072c5ca0a",
+        "thumbnail": "https://velog.velcdn.com/images/yulmwu/profile/b07f79a0-c4e0-4cf7-bf1f-ab1d5778444f/image.png",
+        "display_name": "Kim Jun Young"
+      }
+    },
+    "series": {
+      "name": "Kubernetes",
+      "url_slug": "kubernetes"
+    },
+    "url_slug": "kubernetes-gateway",
+    "released_at": "2025-09-09T02:34:00.236Z",
+    "updated_at": "2026-01-21T05:33:39.186Z",
+    "comments_count": 0,
+    "tags": [
+      "aws",
+      "eks",
+      "kubernetes",
+      "networking"
+    ],
+    "is_private": false,
+    "likes": 0
+  },
+  {
+    "id": "c2f13834-3ba5-4c9f-9397-0fd0dbadd29f",
+    "title": "[Kubernetes w/ EKS] Pod AutoScaling with HPA ",
+    "short_description": "쿠버네티스 파드 수평적 오토스케일링(HPA) 실습",
+    "thumbnail": "https://velog.velcdn.com/images/yulmwu/post/7be1b64e-2cab-4882-9d95-801e31aba283/image.png",
+    "user": {
+      "id": "043a0620-778e-43f4-94cd-c7d894cd0736",
+      "username": "yulmwu",
+      "profile": {
+        "id": "19d152cc-d01d-4823-b7a7-ed2072c5ca0a",
+        "thumbnail": "https://velog.velcdn.com/images/yulmwu/profile/b07f79a0-c4e0-4cf7-bf1f-ab1d5778444f/image.png",
+        "display_name": "Kim Jun Young"
+      }
+    },
+    "series": {
+      "name": "Kubernetes",
+      "url_slug": "kubernetes"
+    },
+    "url_slug": "kubernetes-hpa",
+    "released_at": "2025-09-06T01:59:45.085Z",
+    "updated_at": "2026-01-21T01:27:12.681Z",
+    "comments_count": 0,
+    "tags": [
+      "eks",
+      "kubernetes"
+    ],
+    "is_private": false,
+    "likes": 0
+  },
+  {
+    "id": "2856c708-6bf5-49bb-83fb-0016ba2946d9",
+    "title": "[Kubernetes w/ EKS] Service(ClusterIP, NodePort, LoadBalancer) and Ingress(Nginx, AWS ALB)",
+    "short_description": "쿠버네티스 Service(ClusterIP, NodePort, LoadBalancer) 및 Ingress(Nginx, AWS ALB) + AWS EKS 실습",
+    "thumbnail": "https://velog.velcdn.com/images/yulmwu/post/14812c8e-be14-4f71-944d-c2618b88aa1c/image.png",
+    "user": {
+      "id": "043a0620-778e-43f4-94cd-c7d894cd0736",
+      "username": "yulmwu",
+      "profile": {
+        "id": "19d152cc-d01d-4823-b7a7-ed2072c5ca0a",
+        "thumbnail": "https://velog.velcdn.com/images/yulmwu/profile/b07f79a0-c4e0-4cf7-bf1f-ab1d5778444f/image.png",
+        "display_name": "Kim Jun Young"
+      }
+    },
+    "series": {
+      "name": "Kubernetes",
+      "url_slug": "kubernetes"
+    },
+    "url_slug": "kubernetes-service-ingress",
+    "released_at": "2025-08-31T04:04:42.869Z",
+    "updated_at": "2026-01-21T01:37:31.488Z",
+    "comments_count": 0,
+    "tags": [
+      "eks",
+      "kubernetes"
+    ],
+    "is_private": false,
+    "likes": 0
+  },
+  {
+    "id": "2ba70756-04cd-4682-9ce4-71a1e0f4cdb8",
+    "title": "[AWS Integration] Serverless GraphQL API with AWS AppSync and JavaScript Resolver",
+    "short_description": "AWS AppSync를 통한 서버리스 GraphQL API 구축하기",
+    "thumbnail": "https://velog.velcdn.com/images/yulmwu/post/2399d03c-394f-4bb2-bbc2-6dd1095dfc62/image.png",
+    "user": {
+      "id": "043a0620-778e-43f4-94cd-c7d894cd0736",
+      "username": "yulmwu",
+      "profile": {
+        "id": "19d152cc-d01d-4823-b7a7-ed2072c5ca0a",
+        "thumbnail": "https://velog.velcdn.com/images/yulmwu/profile/b07f79a0-c4e0-4cf7-bf1f-ab1d5778444f/image.png",
+        "display_name": "Kim Jun Young"
+      }
+    },
+    "series": {
+      "name": "AWS",
+      "url_slug": "AWS"
+    },
+    "url_slug": "aws-appsync-graphql-serverless",
+    "released_at": "2025-08-28T23:57:35.785Z",
+    "updated_at": "2026-01-17T11:03:54.112Z",
+    "comments_count": 0,
+    "tags": [
+      "Integration",
+      "aws",
+      "serverless"
+    ],
+    "is_private": false,
+    "likes": 0
+  },
+  {
+    "id": "0d9c4876-ef96-4463-a350-9210d2a47859",
+    "title": "[AWS Integration] MSA with SQS & Pub/Sub Pattern with SNS",
+    "short_description": "AWS SQS and SNS를 통한 MSA 애플리케이션 간 메시징 솔루션 (+ DLQ)",
+    "thumbnail": "https://velog.velcdn.com/images/yulmwu/post/5f3aed6a-bc4c-437e-9523-aa40bb541222/image.png",
+    "user": {
+      "id": "043a0620-778e-43f4-94cd-c7d894cd0736",
+      "username": "yulmwu",
+      "profile": {
+        "id": "19d152cc-d01d-4823-b7a7-ed2072c5ca0a",
+        "thumbnail": "https://velog.velcdn.com/images/yulmwu/profile/b07f79a0-c4e0-4cf7-bf1f-ab1d5778444f/image.png",
+        "display_name": "Kim Jun Young"
+      }
+    },
+    "series": {
+      "name": "AWS",
+      "url_slug": "AWS"
+    },
+    "url_slug": "aws-sqs-sns",
+    "released_at": "2025-08-26T04:24:51.006Z",
+    "updated_at": "2026-01-23T04:23:44.253Z",
+    "comments_count": 0,
+    "tags": [
+      "Integration",
+      "aws"
+    ],
+    "is_private": false,
+    "likes": 0
+  },
+  {
+    "id": "184ace5d-cbd0-47e1-93b2-b217f8cd114d",
+    "title": "[AWS Networking] AWS Global Accelerator (AGA)",
+    "short_description": "AWS Global Accelerator를 통한 글로벌 서비스의 네트워크 퍼포먼스 올리기",
+    "thumbnail": "https://velog.velcdn.com/images/yulmwu/post/21762d10-0991-45df-b83c-ae28ebf19de3/image.png",
+    "user": {
+      "id": "043a0620-778e-43f4-94cd-c7d894cd0736",
+      "username": "yulmwu",
+      "profile": {
+        "id": "19d152cc-d01d-4823-b7a7-ed2072c5ca0a",
+        "thumbnail": "https://velog.velcdn.com/images/yulmwu/profile/b07f79a0-c4e0-4cf7-bf1f-ab1d5778444f/image.png",
+        "display_name": "Kim Jun Young"
+      }
+    },
+    "series": {
+      "name": "AWS",
+      "url_slug": "AWS"
+    },
+    "url_slug": "aws-global-accelerator",
+    "released_at": "2025-08-24T05:15:47.274Z",
+    "updated_at": "2026-01-26T01:45:17.511Z",
+    "comments_count": 0,
+    "tags": [
+      "aws",
+      "networking"
+    ],
+    "is_private": false,
+    "likes": 0
+  },
+  {
+    "id": "1fa35f9b-3c98-435a-8861-7246c9aa0e1e",
+    "title": "[AWS Misc] Image Resizing with AWS CloudFront + Lambda@Edge",
+    "short_description": "AWS S3 + CloudFront + Lambda@Edge을 통한 이미지 리사이징 및 LCP 최적화",
+    "thumbnail": "https://velog.velcdn.com/images/yulmwu/post/9e5ceb56-4d9c-49ee-bc51-bc62fa88f8a0/image.png",
+    "user": {
+      "id": "043a0620-778e-43f4-94cd-c7d894cd0736",
+      "username": "yulmwu",
+      "profile": {
+        "id": "19d152cc-d01d-4823-b7a7-ed2072c5ca0a",
+        "thumbnail": "https://velog.velcdn.com/images/yulmwu/profile/b07f79a0-c4e0-4cf7-bf1f-ab1d5778444f/image.png",
+        "display_name": "Kim Jun Young"
+      }
+    },
+    "series": {
+      "name": "AWS",
+      "url_slug": "AWS"
+    },
+    "url_slug": "aws-cloudfront-lambda-image-resizing",
+    "released_at": "2025-08-22T01:58:08.671Z",
+    "updated_at": "2026-01-07T02:06:01.137Z",
+    "comments_count": 0,
+    "tags": [
+      "Misc",
+      "aws"
+    ],
+    "is_private": false,
+    "likes": 0
+  },
+  {
+    "id": "fafd934f-a0a8-4ca9-b1ba-091dc65c34b4",
+    "title": "[AWS Misc] Secrets Manager Key Rotation Lambda",
+    "short_description": "AWS Lambda를 사용한 Secrets Manager 키 로테이션 ",
+    "thumbnail": "https://velog.velcdn.com/images/yulmwu/post/926cb0ac-b027-4968-857e-ecea1efdb2b4/image.png",
+    "user": {
+      "id": "043a0620-778e-43f4-94cd-c7d894cd0736",
+      "username": "yulmwu",
+      "profile": {
+        "id": "19d152cc-d01d-4823-b7a7-ed2072c5ca0a",
+        "thumbnail": "https://velog.velcdn.com/images/yulmwu/profile/b07f79a0-c4e0-4cf7-bf1f-ab1d5778444f/image.png",
+        "display_name": "Kim Jun Young"
+      }
+    },
+    "series": {
+      "name": "AWS",
+      "url_slug": "AWS"
+    },
+    "url_slug": "aws-secrets-manager-key-rotation-lambda",
+    "released_at": "2025-08-12T13:35:35.857Z",
+    "updated_at": "2026-01-26T07:58:46.218Z",
+    "comments_count": 0,
+    "tags": [
+      "Misc",
+      "aws"
+    ],
+    "is_private": false,
+    "likes": 0
+  },
+  {
+    "id": "9ada322c-426d-48d6-a305-8394e7d4b406",
+    "title": "[NestJS] Using AWS S3 Presigned URL (POST)",
+    "short_description": "NestJS에서 AWS S3 Presigned URL 사용하기 (POST 방식)",
+    "thumbnail": "https://velog.velcdn.com/images/yulmwu/post/85daed76-3439-42e9-844d-4983a0cd540f/image.png",
+    "user": {
+      "id": "043a0620-778e-43f4-94cd-c7d894cd0736",
+      "username": "yulmwu",
+      "profile": {
+        "id": "19d152cc-d01d-4823-b7a7-ed2072c5ca0a",
+        "thumbnail": "https://velog.velcdn.com/images/yulmwu/profile/b07f79a0-c4e0-4cf7-bf1f-ab1d5778444f/image.png",
+        "display_name": "Kim Jun Young"
+      }
+    },
+    "series": {
+      "name": "NestJS",
+      "url_slug": "NestJS"
+    },
+    "url_slug": "nestjs-s3-presigned-url-post",
+    "released_at": "2025-08-08T11:43:35.057Z",
+    "updated_at": "2026-01-18T18:33:03.769Z",
+    "comments_count": 0,
+    "tags": [
+      "NestJS",
+      "aws"
+    ],
+    "is_private": false,
+    "likes": 0
+  },
+  {
+    "id": "289c9193-4aa6-4aff-9625-f99191cd1285",
+    "title": "[NestJS] Using AWS S3 Presigned URL",
+    "short_description": "NestJS에서 AWS S3 Presigned URL 사용하기",
+    "thumbnail": "https://velog.velcdn.com/images/yulmwu/post/644162d3-f973-4718-9ab6-699de6e18bf5/image.png",
+    "user": {
+      "id": "043a0620-778e-43f4-94cd-c7d894cd0736",
+      "username": "yulmwu",
+      "profile": {
+        "id": "19d152cc-d01d-4823-b7a7-ed2072c5ca0a",
+        "thumbnail": "https://velog.velcdn.com/images/yulmwu/profile/b07f79a0-c4e0-4cf7-bf1f-ab1d5778444f/image.png",
+        "display_name": "Kim Jun Young"
+      }
+    },
+    "series": {
+      "name": "NestJS",
+      "url_slug": "NestJS"
+    },
+    "url_slug": "nestjs-s3-presigned-url",
+    "released_at": "2025-08-03T05:36:07.088Z",
+    "updated_at": "2026-01-21T03:07:31.886Z",
+    "comments_count": 0,
+    "tags": [
+      "NestJS",
+      "aws"
+    ],
+    "is_private": false,
+    "likes": 0
+  },
+  {
+    "id": "1c6f5ccf-44b1-4ff1-9b42-9d16a65bbeda",
+    "title": "[NestJS] IntersectionType: @nestjs/mapped-types vs @nestjs/swagger",
+    "short_description": "NestJS DTO 상속(IntersectionType)에서 @nestjs/mapped-types vs @nestjs/swagger 라이브러리 차이",
+    "thumbnail": "https://velog.velcdn.com/images/yulmwu/post/1d69e27a-ecf5-492e-9239-0dc2f3ee596b/image.png",
+    "user": {
+      "id": "043a0620-778e-43f4-94cd-c7d894cd0736",
+      "username": "yulmwu",
+      "profile": {
+        "id": "19d152cc-d01d-4823-b7a7-ed2072c5ca0a",
+        "thumbnail": "https://velog.velcdn.com/images/yulmwu/profile/b07f79a0-c4e0-4cf7-bf1f-ab1d5778444f/image.png",
+        "display_name": "Kim Jun Young"
+      }
+    },
+    "series": {
+      "name": "NestJS",
+      "url_slug": "NestJS"
+    },
+    "url_slug": "nestjs-intersectiontype",
+    "released_at": "2025-07-29T04:31:52.248Z",
+    "updated_at": "2026-01-26T10:36:30.120Z",
+    "comments_count": 0,
+    "tags": [
+      "NestJS"
+    ],
+    "is_private": false,
+    "likes": 0
+  },
+  {
+    "id": "cb6f034c-0de4-4e50-ba9f-c30d37f7b9ec",
+    "title": "[NestJS] class-transformer @Exclude(), @Expose() Decorators and NestJS Interceptor",
+    "short_description": "NestJS Response DTO에서 특정 필드만 제외시킬 수 있을까? (Class Transformer)",
+    "thumbnail": "https://velog.velcdn.com/images/yulmwu/post/9610588e-6f3b-4874-9d1a-e77aa91be273/image.png",
+    "user": {
+      "id": "043a0620-778e-43f4-94cd-c7d894cd0736",
+      "username": "yulmwu",
+      "profile": {
+        "id": "19d152cc-d01d-4823-b7a7-ed2072c5ca0a",
+        "thumbnail": "https://velog.velcdn.com/images/yulmwu/profile/b07f79a0-c4e0-4cf7-bf1f-ab1d5778444f/image.png",
+        "display_name": "Kim Jun Young"
+      }
+    },
+    "series": {
+      "name": "NestJS",
+      "url_slug": "NestJS"
+    },
+    "url_slug": "nestjs-class-transformer-exclude-expose",
+    "released_at": "2025-07-28T05:31:07.318Z",
+    "updated_at": "2026-01-13T04:05:06.876Z",
+    "comments_count": 0,
+    "tags": [
+      "NestJS"
+    ],
+    "is_private": false,
+    "likes": 0
+  },
+  {
+    "id": "ce2ba55c-ad43-4961-abbb-c5176011a8e7",
+    "title": "[AWS CI/CD] EC2 Deployment with CodeDeploy + Github Actions #2 (with Auto Scaling)",
+    "short_description": "AWS CodeDeploy + Github Actions를 통한 EC2 배포 실습 (EC2 Auto Scaling)",
+    "thumbnail": "https://velog.velcdn.com/images/yulmwu/post/0d3a0bcf-5e26-47ec-bebd-0e866acd0820/image.png",
+    "user": {
+      "id": "043a0620-778e-43f4-94cd-c7d894cd0736",
+      "username": "yulmwu",
+      "profile": {
+        "id": "19d152cc-d01d-4823-b7a7-ed2072c5ca0a",
+        "thumbnail": "https://velog.velcdn.com/images/yulmwu/profile/b07f79a0-c4e0-4cf7-bf1f-ab1d5778444f/image.png",
+        "display_name": "Kim Jun Young"
+      }
+    },
+    "series": {
+      "name": "AWS",
+      "url_slug": "AWS"
+    },
+    "url_slug": "aws-codedeploy-asg",
+    "released_at": "2025-07-25T02:30:31.679Z",
+    "updated_at": "2026-01-18T01:20:41.498Z",
+    "comments_count": 0,
+    "tags": [
+      "CI/CD",
+      "aws"
+    ],
+    "is_private": false,
+    "likes": 0
+  },
+  {
+    "id": "f1c992c0-2b17-4947-8240-29e271bad99e",
+    "title": "[AWS CI/CD] EC2 Deployment with CodeDeploy + Github Actions #1 (Single EC2 Instance)",
+    "short_description": "AWS CodeDeploy + Github Actions를 통한 EC2 배포 실습 (Single EC2 Instance)",
+    "thumbnail": "https://velog.velcdn.com/images/yulmwu/post/698e3885-33b7-4940-aebf-1798bb053f22/image.png",
+    "user": {
+      "id": "043a0620-778e-43f4-94cd-c7d894cd0736",
+      "username": "yulmwu",
+      "profile": {
+        "id": "19d152cc-d01d-4823-b7a7-ed2072c5ca0a",
+        "thumbnail": "https://velog.velcdn.com/images/yulmwu/profile/b07f79a0-c4e0-4cf7-bf1f-ab1d5778444f/image.png",
+        "display_name": "Kim Jun Young"
+      }
+    },
+    "series": {
+      "name": "AWS",
+      "url_slug": "AWS"
+    },
+    "url_slug": "aws-codedeploy-single-ec2",
+    "released_at": "2025-07-23T05:21:34.383Z",
+    "updated_at": "2026-01-18T01:20:41.029Z",
+    "comments_count": 0,
+    "tags": [
+      "CI/CD",
+      "aws"
+    ],
+    "is_private": false,
+    "likes": 0
+  },
+  {
+    "id": "b5510abf-aa53-4631-98d2-2812c3999373",
+    "title": "[Tools] AWS 다이어그램 만드는 방법 (draw.io)",
+    "short_description": "다이어그램 도구, draw.io 사용법 (AWS 다이어그램 만드는 방법)",
+    "thumbnail": "https://velog.velcdn.com/images/yulmwu/post/4a45708c-507e-4603-9519-3cb9ea57ab71/image.png",
+    "user": {
+      "id": "043a0620-778e-43f4-94cd-c7d894cd0736",
+      "username": "yulmwu",
+      "profile": {
+        "id": "19d152cc-d01d-4823-b7a7-ed2072c5ca0a",
+        "thumbnail": "https://velog.velcdn.com/images/yulmwu/profile/b07f79a0-c4e0-4cf7-bf1f-ab1d5778444f/image.png",
+        "display_name": "Kim Jun Young"
+      }
+    },
+    "series": {
+      "name": "Misc",
+      "url_slug": "misc"
+    },
+    "url_slug": "how-to-use-draw-io",
+    "released_at": "2025-07-19T06:05:51.558Z",
+    "updated_at": "2026-01-24T07:43:09.498Z",
+    "comments_count": 0,
+    "tags": [
+      "aws"
+    ],
+    "is_private": false,
+    "likes": 0
+  },
+  {
+    "id": "54d6b9d1-973d-41d6-b679-598d29000c6d",
+    "title": "[AWS Computing] Configure EC2 Bastion Host",
+    "short_description": "AWS EC2 Bastion Host 구성 방법",
+    "thumbnail": "https://velog.velcdn.com/images/yulmwu/post/7555d021-2e71-4136-84b5-7757b7a77c37/image.png",
+    "user": {
+      "id": "043a0620-778e-43f4-94cd-c7d894cd0736",
+      "username": "yulmwu",
+      "profile": {
+        "id": "19d152cc-d01d-4823-b7a7-ed2072c5ca0a",
+        "thumbnail": "https://velog.velcdn.com/images/yulmwu/profile/b07f79a0-c4e0-4cf7-bf1f-ab1d5778444f/image.png",
+        "display_name": "Kim Jun Young"
+      }
+    },
+    "series": {
+      "name": "AWS",
+      "url_slug": "AWS"
+    },
+    "url_slug": "ec2-bastion-host",
+    "released_at": "2025-07-18T11:55:33.318Z",
+    "updated_at": "2026-01-14T08:59:36.167Z",
+    "comments_count": 0,
+    "tags": [
+      "Computing",
+      "aws"
+    ],
+    "is_private": false,
+    "likes": 0
+  },
+  {
+    "id": "8a88f1dc-2133-46ae-83a4-9a9c87fde94e",
+    "title": "[일상] 요금 환불 요청기",
+    "short_description": "Feat. 공중분해 될 뻔한 20달러 돌려받기",
+    "thumbnail": "https://velog.velcdn.com/images/yulmwu/post/136a3637-448b-4217-b92e-80ec1e28c2fa/image.png",
+    "user": {
+      "id": "043a0620-778e-43f4-94cd-c7d894cd0736",
+      "username": "yulmwu",
+      "profile": {
+        "id": "19d152cc-d01d-4823-b7a7-ed2072c5ca0a",
+        "thumbnail": "https://velog.velcdn.com/images/yulmwu/profile/b07f79a0-c4e0-4cf7-bf1f-ab1d5778444f/image.png",
+        "display_name": "Kim Jun Young"
+      }
+    },
+    "series": {
+      "name": "Misc",
+      "url_slug": "misc"
+    },
+    "url_slug": "refund-aws",
+    "released_at": "2025-07-16T01:06:24.694Z",
+    "updated_at": "2026-01-26T00:52:52.138Z",
+    "comments_count": 0,
+    "tags": [
+      "aws",
+      "일상"
+    ],
+    "is_private": false,
+    "likes": 0
+  },
+  {
+    "id": "bc841562-9d4f-4fe7-ac22-47123b255bef",
+    "title": "[AWS Misc] Backup Velog periodically (Lambda, EventBridge Scheduler, S3)",
+    "short_description": "AWS Lambda + EventBridge Scheduler를 통한 주기적인 Velog 백업 자동화",
+    "thumbnail": "https://velog.velcdn.com/images/yulmwu/post/3f8e7a39-40fc-4bc9-bc4f-7fcb1afffaf8/image.png",
+    "user": {
+      "id": "043a0620-778e-43f4-94cd-c7d894cd0736",
+      "username": "yulmwu",
+      "profile": {
+        "id": "19d152cc-d01d-4823-b7a7-ed2072c5ca0a",
+        "thumbnail": "https://velog.velcdn.com/images/yulmwu/profile/b07f79a0-c4e0-4cf7-bf1f-ab1d5778444f/image.png",
+        "display_name": "Kim Jun Young"
+      }
+    },
+    "series": {
+      "name": "AWS",
+      "url_slug": "AWS"
+    },
+    "url_slug": "velog-backup-with-eventbridge",
+    "released_at": "2025-07-05T04:23:58.191Z",
+    "updated_at": "2026-01-06T11:29:29.261Z",
+    "comments_count": 0,
+    "tags": [
+      "Misc",
+      "aws"
+    ],
+    "is_private": false,
+    "likes": 0
+  }
+]
