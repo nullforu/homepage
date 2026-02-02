@@ -1,16 +1,19 @@
 import { Link } from 'react-router-dom'
+import { Layout } from '../components/Layout'
 
 export const NotFound = () => (
-    <div className='flex items-center justify-center min-h-screen bg-gray-100 px-4'>
-        <div className='text-center'>
-            <h1 className='text-9xl font-bold text-gray-800'>404</h1>
-            <h2 className='text-2xl font-semibold text-gray-700 mt-4'>페이지를 찾을 수 없습니다.</h2>
-            <Link
-                to='/'
-                className='inline-block mt-6 px-10 py-2 bg-blue-400 text-white rounded-full hover:bg-blue-500 transition duration-300'
+    <Layout>
+        <div className="max-w-4xl mx-auto text-center py-20">
+            <h1 className="text-6xl font-bold mb-4">404</h1>
+            <p className="text-xl text-gray-600 mb-8">
+                페이지를 찾을 수 없습니다.
+            </p>
+            <Link 
+                to="/" 
+                className="inline-block px-6 py-3 bg-gray-800 text-white rounded hover:bg-gray-700"
             >
-                홈으로 이동
+                홈으로 돌아가기
             </Link>
         </div>
-    </div>
+    </Layout>
 )
