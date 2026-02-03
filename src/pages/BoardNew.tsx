@@ -115,14 +115,14 @@ export const BoardNewPage = () => {
                         <button
                             type='button'
                             onClick={() => navigate('/board')}
-                            className='px-6 py-2 border border-gray-200 rounded-lg hover:bg-gray-50 transition-all text-sm font-medium'
+                            className='px-6 py-2 border border-gray-200 rounded-lg hover:bg-gray-50 text-sm font-medium'
                             disabled={submitting}
                         >
                             취소
                         </button>
                         <button
                             type='submit'
-                            className='px-6 py-2 bg-gray-900 text-white rounded-lg hover:bg-gray-800 transition-all text-sm font-medium shadow-sm hover:shadow-md disabled:opacity-50 disabled:cursor-not-allowed'
+                            className='px-6 py-2 bg-gray-900 text-white rounded-lg hover:bg-gray-800 text-sm font-medium shadow-sm disabled:opacity-50 disabled:cursor-not-allowed'
                             disabled={submitting}
                         >
                             {submitting ? '작성 중...' : '작성 완료'}

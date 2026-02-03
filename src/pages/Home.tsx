@@ -7,6 +7,37 @@ import { useEffect, useState } from 'react'
 import { listAnnouncements, Announcement } from '../api/client'
 import { Link } from 'react-router-dom'
 
+const techStacks = [
+    {
+        name: 'DevSecOps',
+        description: '개발, 운영 통합 및 CI/CD 파이프라인 구축, 보안/정책 자동화',
+    },
+    {
+        name: 'Web Development',
+        description: '프론트엔드 및 백엔드를 포함한 풀스택 웹 애플리케이션 개발',
+    },
+    {
+        name: 'Programming',
+        description: 'Python, JavaScript, TypeScript, Go 등 다양한 프로그래밍 언어 활용',
+    },
+    {
+        name: 'Cloud Computing',
+        description: 'AWS 등 주요 클라우드 플랫폼(벤더) 활용 및 관리',
+    },
+    {
+        name: 'Containerization & Orchestration',
+        description: 'Docker, Kubernetes 등 컨테이너화 및 오케스트레이션 기술 활용',
+    },
+    {
+        name: 'Collaborations',
+        description: '협업 중심의 프로젝트를 통한 실무 능력 강화',
+    },
+    {
+        name: 'Cybersecurity',
+        description: '시스템 및 네트워크 보안, 침투 테스트, 취약점 분석',
+    },
+]
+
 export const Home = () => {
     const [newsData, setNewsData] = useState<Announcement[]>([])
     const [announcements, setAnnouncements] = useState<Announcement[]>([])
@@ -55,26 +86,58 @@ export const Home = () => {
                 </section>
 
                 <section className='py-12 bg-white rounded-xl mb-6'>
-                    <h2 className='text-3xl font-semibold text-center mb-10'>주요 활동</h2>
-                    <div className='grid grid-cols-1 md:grid-cols-3 gap-6 px-4'>
-                        <div className='border border-gray-100 rounded-xl p-8 text-center hover:shadow-md transition-all'>
-                            <div className='text-4xl mb-4'>ㅇㅇ</div>
-                            <h3 className='text-lg font-semibold mb-3'>대충 제목</h3>
-                            <p className='text-gray-600 text-sm leading-relaxed'>
-                                대충 내용대충 내용대충 내용대충 내용
-                            </p>
-                        </div>
-                        <div className='border border-gray-200 rounded-lg p-6 text-center hover:shadow-md transition-all'>
-                            <div className='text-3xl mb-3'>ㄴㄴ</div>
-                            <h3 className='text-base font-semibold mb-2'>대충 내용</h3>
-                            <p className='text-gray-700 text-sm'>대충 내용대충 내용대충 내용</p>
-                        </div>
-                        <div className='border border-gray-200 rounded-lg p-6 text-center hover:shadow-md transition-all'>
-                            <div className='text-3xl mb-3'>ㄱㄱ</div>
-                            <h3 className='text-base font-semibold mb-2'>대충 내용대충 내용대충 내용</h3>
-                            <p className='text-gray-700 text-sm'>대충 내용대충 내용대충 내용</p>
-                        </div>
+                    <h2 className='text-3xl font-semibold text-center mb-10'>주요 분야/직무</h2>
+                    <div className='px-4'>
+                        <Swiper
+                            modules={[Pagination, Autoplay]}
+                            spaceBetween={24}
+                            slidesPerView={1.7}
+                            slidesPerGroup={1}
+                            pagination={{ clickable: true }}
+                            autoplay={{ delay: 2000, disableOnInteraction: false }}
+                            breakpoints={{
+                                800: {
+                                    slidesPerView: 2.2,
+                                    slidesPerGroup: 1,
+                                },
+                                1024: {
+                                    slidesPerView: 3.5,
+                                    slidesPerGroup: 1,
+                                },
+                                1280: {
+                                    slidesPerView: 4.5,
+                                    slidesPerGroup: 1,
+                                },
+                            }}
+                            className='role-swiper cursor-grab'
+                        >
+                            {techStacks.map((stack, index) => (
+                                <SwiperSlide key={index}>
+                                    <div className='border border-gray-100 rounded-xl p-8 text-center h-[240px] flex flex-col justify-center break-keep'>
+                                        <h3 className='text-lg font-semibold mb-3'>{stack.name}</h3>
+                                        <p className='text-gray-600 text-sm leading-relaxed'>{stack.description}</p>
+                                    </div>
+                                </SwiperSlide>
+                            ))}
+                        </Swiper>
                     </div>
+                    <style>{`
+                        .role-swiper {
+                            padding-bottom: 45px;
+                        }
+                        .role-swiper .swiper-pagination {
+                            bottom: 10px;
+                        }
+                        .role-swiper .swiper-pagination-bullet {
+                            background: #3b82f6;
+                            width: 8px;
+                            height: 8px;
+                            opacity: 0.3;
+                        }
+                        .role-swiper .swiper-pagination-bullet-active {
+                            opacity: 1;
+                        }
+                    `}</style>
                 </section>
 
                 <section className='py-12 mb-6'>
@@ -95,14 +158,14 @@ export const Home = () => {
                                     <Swiper
                                         modules={[Pagination, Autoplay]}
                                         spaceBetween={16}
-                                        slidesPerView={1}
+                                        slidesPerView={1.7}
                                         slidesPerGroup={1}
                                         pagination={{ clickable: true }}
                                         autoplay={{ delay: 5000, disableOnInteraction: false }}
                                         breakpoints={{
                                             640: {
-                                                slidesPerView: 2,
-                                                slidesPerGroup: 2,
+                                                slidesPerView: 2.5,
+                                                slidesPerGroup: 1,
                                             },
                                         }}
                                         className='news-swiper'
@@ -110,7 +173,7 @@ export const Home = () => {
                                         {newsData.map((news) => (
                                             <SwiperSlide key={news.id}>
                                                 <Link to={`/notices/${news.id}`}>
-                                                    <div className='bg-white border border-gray-200 rounded-lg p-5 h-[240px] flex flex-col justify-between cursor-pointer hover:shadow-lg transition-shadow'>
+                                                    <div className='bg-white border border-gray-200 rounded-lg p-5 h-[240px] flex flex-col justify-between cursor-pointer'>
                                                         <div>
                                                             <h3 className='text-lg font-bold mb-2 text-gray-800 line-clamp-2'>
                                                                 {news.title}
@@ -168,7 +231,7 @@ export const Home = () => {
                                 <div className='grid gap-4'>
                                     {announcements.map((announcement) => (
                                         <Link key={announcement.id} to={`/notices/${announcement.id}`}>
-                                            <div className='border border-gray-200 rounded-lg p-4 hover:shadow-md transition-all cursor-pointer group'>
+                                            <div className='border border-gray-200 rounded-lg p-4 cursor-pointer group'>
                                                 <div className='flex items-start justify-between mb-2'>
                                                     <h3 className='text-base font-semibold text-gray-800 transition-colors flex-1'>
                                                         {announcement.title}
@@ -201,12 +264,12 @@ export const Home = () => {
                     <h2 className='text-3xl font-semibold mb-4'>가입하기</h2>
                     <p className='text-gray-600 mb-8'>함께 나아갈 동아리원을 모집합니다.</p>
                     <div className='flex flex-col justify-center items-center gap-4'>
-                        <button className='w-64 px-8 py-3 bg-gray-900 text-white rounded-xl hover:bg-gray-800 hover:-translate-y-0.5 transition-all duration-300 shadow-md hover:shadow-lg'>
-                            2026학년도 1학기 지원 안내
-                        </button>
-                        <button className='w-64 px-8 py-3 bg-gray-900 text-white rounded-xl hover:bg-gray-800 hover:-translate-y-0.5 transition-all duration-300 shadow-md hover:shadow-lg'>
+                        <a
+                            href='/recruitment'
+                            className='w-64 px-8 py-3 bg-gray-900 text-white rounded-xl hover:bg-gray-800 hover:-translate-y-0.5 transition-all duration-300'
+                        >
                             모집안내
-                        </button>
+                        </a>
                     </div>
                 </section>
             </div>

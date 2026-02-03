@@ -20,8 +20,18 @@ export const NavBar = () => {
         return () => window.removeEventListener('scroll', handleScroll)
     }, [])
 
-    const isActive = (path: string) => {
-        return location.pathname === path
+    const getItemPathsRecursively = (item: any): string[] => {
+        let paths = [item.path]
+        if (item.dropdown) {
+            for (const subItem of item.dropdown) {
+                paths = paths.concat(getItemPathsRecursively(subItem))
+            }
+        }
+        return paths
+    }
+
+    const isActive = (paths: string[]) => {
+        return paths.includes(location.pathname)
     }
 
     const menuItems = [
@@ -116,7 +126,7 @@ export const NavBar = () => {
                                     <Link
                                         to={item.path}
                                         className={`px-3 py-1.5 rounded-lg transition-all flex items-center gap-1 text-sm ${
-                                            isActive(item.path)
+                                            isActive(getItemPathsRecursively(item))
                                                 ? 'bg-gray-900 text-white'
                                                 : 'text-gray-700 hover:bg-gray-100'
                                         }`}
@@ -198,7 +208,9 @@ export const NavBar = () => {
                             <Link
                                 to={item.path}
                                 className={`px-3 py-2 rounded-lg mb-2 transition-all flex items-center justify-between text-sm ${
-                                    isActive(item.path) ? 'bg-gray-900 text-white' : 'text-gray-700 hover:bg-gray-100'
+                                    isActive(getItemPathsRecursively(item))
+                                        ? 'bg-gray-900 text-white'
+                                        : 'text-gray-700 hover:bg-gray-100'
                                 }`}
                             >
                                 {item.label}

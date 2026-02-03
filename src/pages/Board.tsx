@@ -67,7 +67,7 @@ export const BoardPage = () => {
                             onChange={(e) => setSearchQuery(e.target.value)}
                             className='flex-1 border border-gray-200 px-4 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-900 focus:border-transparent text-sm'
                         />
-                        <button className='px-8 py-3 bg-gray-900 text-white rounded-lg hover:bg-gray-800 transition-all text-sm font-medium shadow-sm hover:shadow-md'>
+                        <button className='px-8 py-3 bg-gray-900 text-white rounded-lg hover:bg-gray-800 text-sm font-medium shadow-sm'>
                             검색
                         </button>
                     </div>
@@ -141,7 +141,7 @@ export const BoardPage = () => {
                     <div className='mt-6 flex justify-end'>
                         <Link
                             to='/board/new'
-                            className='px-6 py-2 bg-gray-900 text-white rounded-lg hover:bg-gray-800 transition-all text-sm font-medium shadow-sm hover:shadow-md'
+                            className='px-6 py-2 bg-gray-900 text-white rounded-lg hover:bg-gray-800 text-sm font-medium shadow-sm'
                         >
                             글쓰기
                         </Link>

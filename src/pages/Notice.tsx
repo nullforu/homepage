@@ -73,7 +73,7 @@ export const NoticePage = () => {
         <Layout>
             <div className='max-w-4xl mx-auto px-4 py-6'>
                 <h1 className='text-3xl md:text-4xl font-semibold mb-8'>
-                    {type === 'news' ? '최근 소식' : type === 'notice' ? '공지사항' : '기타'}
+                    {type === 'news' ? '최근 소식' : type === 'notice' ? '공지사항' : '공지 및 소식'}
                 </h1>
 
                 <div className='mb-6 flex gap-2'>
@@ -112,7 +112,7 @@ export const NoticePage = () => {
                             onChange={(e) => setSearchQuery(e.target.value)}
                             className='flex-1 border border-gray-200 px-4 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-900 focus:border-transparent text-sm'
                         />
-                        <button className='px-8 py-3 bg-gray-900 text-white rounded-lg hover:bg-gray-800 transition-all text-sm font-medium shadow-sm hover:shadow-md'>
+                        <button className='px-8 py-3 bg-gray-900 text-white rounded-lg hover:bg-gray-800 text-sm font-medium shadow-sm'>
                             검색
                         </button>
                     </div>

@@ -55,7 +55,7 @@ export default function Markdown({ content }: { content: string }) {
                             <img
                                 src={src}
                                 alt={alt}
-                                className='max-w-full h-auto my-6 transition-all duration-300 rounded-xl shadow-md hover:shadow-lg'
+                                className='max-w-full h-auto my-6 transition-all duration-300 rounded-xl'
                                 loading='lazy'
                             />
                         </a>
