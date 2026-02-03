@@ -1,0 +1,10 @@
+aws_region = "ap-northeast-2"
+
+project_name = "null4u-serverless"
+
+tags = {
+  Owner = "null4u"
+  Env   = "dev"
+}
+
+cors_allow_origins = ["*"]
