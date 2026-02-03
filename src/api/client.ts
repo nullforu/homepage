@@ -51,7 +51,7 @@ export interface DeleteBoardPostRequest {
 }
 
 export const listAnnouncements = async (
-    type?: 'news' | 'notice',
+    type?: 'news' | 'notice' | 'home',
     limit: number = 20,
     nextToken?: string,
 ): Promise<PaginatedResponse<Announcement>> => {

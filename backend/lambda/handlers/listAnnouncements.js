@@ -16,6 +16,59 @@ exports.handler = async (event) => {
         const limit = Math.min(Math.max(parseInt(qs.limit || '20', 10) || 20, 1), 100)
         const nextToken = (qs.nextToken || '').trim()
 
+        if (type === 'home') {
+            const queryNews = async () => {
+                const params = {
+                    TableName: TABLE_NAME,
+                    IndexName: GSI1_NAME,
+                    KeyConditionExpression: 'gsi1pk = :pk',
+                    ExpressionAttributeValues: { ':pk': 'ANNOUNCEMENTS' },
+                    FilterExpression: '#type = :type',
+                    ExpressionAttributeNames: { '#type': 'type' },
+                    ExpressionAttributeValues: { ':pk': 'ANNOUNCEMENTS', ':type': 'news' },
+                    ScanIndexForward: false,
+                    Limit: 10,
+                }
+                const resp = await ddb.send(new QueryCommand(params))
+                return resp.Items || []
+            }
+
+            const queryNotices = async () => {
+                const params = {
+                    TableName: TABLE_NAME,
+                    IndexName: GSI1_NAME,
+                    KeyConditionExpression: 'gsi1pk = :pk',
+                    ExpressionAttributeValues: { ':pk': 'ANNOUNCEMENTS' },
+                    FilterExpression: '#type = :type',
+                    ExpressionAttributeNames: { '#type': 'type' },
+                    ExpressionAttributeValues: { ':pk': 'ANNOUNCEMENTS', ':type': 'notice' },
+                    ScanIndexForward: false,
+                    Limit: 3,
+                }
+                const resp = await ddb.send(new QueryCommand(params))
+                return resp.Items || []
+            }
+
+            const [newsItems, noticeItems] = await Promise.all([queryNews(), queryNotices()])
+            const allItems = [...newsItems, ...noticeItems]
+
+            const items = allItems.map((x) => ({
+                id: x.announcementId,
+                type: x.type,
+                title: x.title,
+                description: x.description,
+                createdAt: x.createdAt,
+                updatedAt: x.updatedAt,
+                views: x.views || 0,
+            }))
+
+            return json({
+                ok: true,
+                items,
+                nextToken: null,
+            })
+        }
+
         let lastSortKey = null
         if (nextToken) {
             if (!isUuid(nextToken)) return badRequest('nextToken must be a UUID')
@@ -66,21 +119,24 @@ exports.handler = async (event) => {
             if (allItems.length >= limit) break
         }
 
-        const items = allItems.slice(0, limit).map((x) => ({
-            id: x.announcementId,
-            type: x.type,
-            title: x.title,
-            description: x.description,
-            createdAt: x.createdAt,
-            updatedAt: x.updatedAt,
-            views: x.views || 0,
-        }))
+        let items
+        if (type !== 'home') {
+            items = allItems.slice(0, limit).map((x) => ({
+                id: x.announcementId,
+                type: x.type,
+                title: x.title,
+                description: x.description,
+                createdAt: x.createdAt,
+                updatedAt: x.updatedAt,
+                views: x.views || 0,
+            }))
+        }
 
         const lastItem = allItems.length > 0 ? allItems[Math.min(limit, allItems.length) - 1] : null
         return json({
             ok: true,
             items,
-            nextToken: lastEvaluatedKey && lastItem ? lastItem.announcementId : null,
+            nextToken: lastEvaluatedKey && lastItem && type !== 'home' ? lastItem.announcementId : null,
         })
     } catch (err) {
         console.error(err)
