@@ -47,12 +47,11 @@ export const Home = () => {
         const fetchData = async () => {
             try {
                 setLoading(true)
-                const [newsResponse, noticesResponse] = await Promise.all([
-                    listAnnouncements('news', 10),
-                    listAnnouncements('notice', 3),
-                ])
-                setNewsData(newsResponse.items)
-                setAnnouncements(noticesResponse.items)
+                const homeResponse = await listAnnouncements('home', 13)
+                const news = homeResponse.items.filter((item) => item.type === 'news')
+                const notices = homeResponse.items.filter((item) => item.type === 'notice')
+                setNewsData(news)
+                setAnnouncements(notices)
             } catch (error) {
                 console.error('Failed to fetch announcements:', error)
             } finally {
