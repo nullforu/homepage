@@ -17,39 +17,45 @@ exports.handler = async (event) => {
         const nextToken = (qs.nextToken || '').trim()
 
         if (type === 'home') {
-            const queryNews = async () => {
-                const params = {
-                    TableName: TABLE_NAME,
-                    IndexName: GSI1_NAME,
-                    KeyConditionExpression: 'gsi1pk = :pk',
-                    ExpressionAttributeValues: { ':pk': 'ANNOUNCEMENTS' },
-                    FilterExpression: '#type = :type',
-                    ExpressionAttributeNames: { '#type': 'type' },
-                    ExpressionAttributeValues: { ':pk': 'ANNOUNCEMENTS', ':type': 'news' },
-                    ScanIndexForward: false,
-                    Limit: 10,
+            const queryByType = async (filterType) => {
+                const items = []
+                let lastEvaluatedKey = null
+                let iterations = 0
+                const maxIterations = 10
+                const targetLimit = filterType === 'news' ? 10 : 3
+
+                while (items.length < targetLimit && iterations < maxIterations) {
+                    const params = {
+                        TableName: TABLE_NAME,
+                        IndexName: GSI1_NAME,
+                        KeyConditionExpression: 'gsi1pk = :pk',
+                        ExpressionAttributeValues: { ':pk': 'ANNOUNCEMENTS', ':type': filterType },
+                        FilterExpression: '#type = :type',
+                        ExpressionAttributeNames: { '#type': 'type' },
+                        ScanIndexForward: false,
+                        Limit: targetLimit,
+                    }
+
+                    if (lastEvaluatedKey) {
+                        params.ExclusiveStartKey = lastEvaluatedKey
+                    }
+
+                    const resp = await ddb.send(new QueryCommand(params))
+                    if (resp.Items && resp.Items.length > 0) {
+                        items.push(...resp.Items)
+                    }
+
+                    lastEvaluatedKey = resp.LastEvaluatedKey
+                    iterations++
+
+                    if (!lastEvaluatedKey) break
+                    if (items.length >= targetLimit) break
                 }
-                const resp = await ddb.send(new QueryCommand(params))
-                return resp.Items || []
+
+                return items.slice(0, targetLimit)
             }
 
-            const queryNotices = async () => {
-                const params = {
-                    TableName: TABLE_NAME,
-                    IndexName: GSI1_NAME,
-                    KeyConditionExpression: 'gsi1pk = :pk',
-                    ExpressionAttributeValues: { ':pk': 'ANNOUNCEMENTS' },
-                    FilterExpression: '#type = :type',
-                    ExpressionAttributeNames: { '#type': 'type' },
-                    ExpressionAttributeValues: { ':pk': 'ANNOUNCEMENTS', ':type': 'notice' },
-                    ScanIndexForward: false,
-                    Limit: 3,
-                }
-                const resp = await ddb.send(new QueryCommand(params))
-                return resp.Items || []
-            }
-
-            const [newsItems, noticeItems] = await Promise.all([queryNews(), queryNotices()])
+            const [newsItems, noticeItems] = await Promise.all([queryByType('news'), queryByType('notice')])
             const allItems = [...newsItems, ...noticeItems]
 
             const items = allItems.map((x) => ({
