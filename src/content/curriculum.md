@@ -4,9 +4,9 @@
 <table class="w-full border-collapse">
 <thead>
 <tr class="bg-gray-50">
-<th class="border-b border-gray-100 p-4 text-left font-bold">주차</th>
-<th class="border-b border-gray-100 p-4 text-left font-bold">주제</th>
-<th class="border-b border-gray-100 p-4 text-left font-bold">내용</th>
+<th class="border-b border-gray-100 p-4 text-left font-semibold">주차</th>
+<th class="border-b border-gray-100 p-4 text-left font-semibold">주제</th>
+<th class="border-b border-gray-100 p-4 text-left font-semibold">내용</th>
 </tr>
 </thead>
 <tbody>
