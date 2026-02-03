@@ -124,7 +124,7 @@ export const NoticePage = () => {
                     <div className='text-center py-20 text-gray-500'>등록된 게시글이 없습니다.</div>
                 ) : (
                     <>
-                        <div className='border border-gray-100 rounded-xl overflow-hidden'>
+                        <div className='hidden md:block border border-gray-100 rounded-xl overflow-hidden'>
                             <div className='bg-gray-50 border-b border-gray-100'>
                                 <div className='grid grid-cols-12 gap-4 p-4 text-sm font-semibold'>
                                     <div className='col-span-1 text-center'>구분</div>
@@ -159,6 +159,31 @@ export const NoticePage = () => {
                                     </Link>
                                 ))}
                             </div>
+                        </div>
+
+                        <div className='md:hidden flex flex-col gap-3'>
+                            {filteredAnnouncements.map((announcement, _) => (
+                                <Link key={announcement.id} to={`/notices/${announcement.id}`}>
+                                    <div className='border border-gray-100 rounded-lg p-4 hover:bg-gray-50 cursor-pointer transition-colors'>
+                                        <div className='flex items-start justify-between mb-2'>
+                                            <span
+                                                className={`text-xs px-2 py-1 rounded-full ${
+                                                    announcement.type === 'news'
+                                                        ? 'bg-green-100 text-green-700'
+                                                        : 'bg-blue-100 text-blue-700'
+                                                }`}
+                                            >
+                                                {getTypeLabel(announcement.type)}
+                                            </span>
+                                        </div>
+                                        <h3 className='font-medium text-sm mb-3'>{announcement.title}</h3>
+                                        <div className='flex items-center justify-between text-xs text-gray-500'>
+                                            <span>{formatDate(announcement.createdAt)}</span>
+                                            <span>조회 {announcement.views}</span>
+                                        </div>
+                                    </div>
+                                </Link>
+                            ))}
                         </div>
 
                         {hasMore && (

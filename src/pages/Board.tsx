@@ -79,7 +79,7 @@ export const BoardPage = () => {
                     <div className='text-center py-20 text-gray-500'>등록된 게시글이 없습니다.</div>
                 ) : (
                     <>
-                        <div className='border border-gray-100 rounded-xl overflow-hidden'>
+                        <div className='hidden md:block border border-gray-100 rounded-xl overflow-hidden'>
                             <div className='bg-gray-50 border-b border-gray-100'>
                                 <div className='grid grid-cols-12 gap-4 p-4 text-sm font-semibold'>
                                     <div className='col-span-7'>제목</div>
@@ -104,6 +104,23 @@ export const BoardPage = () => {
                                     </Link>
                                 ))}
                             </div>
+                        </div>
+
+                        <div className='md:hidden flex flex-col gap-3'>
+                            {filteredPosts.map((post, _) => (
+                                <Link key={post.id} to={`/board/${post.id}`}>
+                                    <div className='border border-gray-100 rounded-lg p-4 hover:bg-gray-50 cursor-pointer transition-colors'>
+                                        <h3 className='font-medium text-sm mb-3'>{post.title}</h3>
+                                        <div className='flex items-center justify-between text-xs text-gray-500'>
+                                            <div className='flex items-center gap-3'>
+                                                <span>{post.anonymousName}</span>
+                                                <span>{formatDate(post.createdAt)}</span>
+                                            </div>
+                                            <span>조회 {post.views}</span>
+                                        </div>
+                                    </div>
+                                </Link>
+                            ))}
                         </div>
 
                         {hasMore && (

@@ -97,7 +97,10 @@ export const NavBar = () => {
                                     />
                                 </svg>
                             </button>
-                            <Link to='/' className='text-lg font-semibold hover:text-gray-700 transition-colors'>
+                            <Link
+                                to='/'
+                                className='text-lg font-semibold hover:text-gray-700 transition-colors hidden md:block'
+                            >
                                 <img src='/images/null4u.png' alt='Null4U' className='h-8 w-auto' />
                             </Link>
                         </div>
