@@ -42,9 +42,31 @@ exports.handler = async (event) => {
             queryParams.ExpressionAttributeValues[':type'] = type
         }
 
-        const resp = await ddb.send(new QueryCommand(queryParams))
+        const allItems = []
+        let lastEvaluatedKey = null
+        let iterations = 0
+        const maxIterations = 10
 
-        const items = (resp.Items || []).map((x) => ({
+        while (allItems.length < limit && iterations < maxIterations) {
+            if (lastEvaluatedKey) {
+                queryParams.ExclusiveStartKey = lastEvaluatedKey
+            }
+
+            const resp = await ddb.send(new QueryCommand(queryParams))
+
+            if (resp.Items && resp.Items.length > 0) {
+                allItems.push(...resp.Items)
+            }
+
+            lastEvaluatedKey = resp.LastEvaluatedKey
+            iterations++
+
+            if (!lastEvaluatedKey) break
+
+            if (allItems.length >= limit) break
+        }
+
+        const items = allItems.slice(0, limit).map((x) => ({
             id: x.announcementId,
             type: x.type,
             title: x.title,
@@ -54,11 +76,11 @@ exports.handler = async (event) => {
             views: x.views || 0,
         }))
 
-        const lastItem = resp.Items && resp.Items.length ? resp.Items[resp.Items.length - 1] : null
+        const lastItem = allItems.length > 0 ? allItems[Math.min(limit, allItems.length) - 1] : null
         return json({
             ok: true,
             items,
-            nextToken: resp.LastEvaluatedKey && lastItem ? lastItem.announcementId : null,
+            nextToken: lastEvaluatedKey && lastItem ? lastItem.announcementId : null,
         })
     } catch (err) {
         console.error(err)

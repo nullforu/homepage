@@ -7,6 +7,11 @@ import { ProjectsPage } from './pages/Projects'
 import { RecruitmentPage } from './pages/Recruitment'
 import { ContactPage } from './pages/Contact'
 import { BoardPage } from './pages/Board'
+import { BoardNewPage } from './pages/BoardNew'
+import { BoardEditPage } from './pages/BoardEdit'
+import { NoticePage } from './pages/Notice'
+import { NoticeDetailPage } from './pages/NoticeDetail'
+import { BoardDetailPage } from './pages/BoardDetail'
 import { NotFound } from './pages/NotFound'
 
 import './App.css'
@@ -28,6 +33,12 @@ const App = () => {
                 <Route path='/recruitment' element={<RecruitmentPage />} />
                 <Route path='/contact' element={<ContactPage />} />
                 <Route path='/board' element={<BoardPage />} />
+                <Route path='/board/new' element={<BoardNewPage />} />
+                <Route path='/board/:id/edit' element={<BoardEditPage />} />
+                <Route path='/board/:id' element={<BoardDetailPage />} />
+                <Route path='/notice' element={<NoticePage />} />
+                <Route path='/notices' element={<NoticePage />} />
+                <Route path='/notices/:id' element={<NoticeDetailPage />} />
                 <Route path='*' element={<NotFound />} />
             </Routes>
         </div>

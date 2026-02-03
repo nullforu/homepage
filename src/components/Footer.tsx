@@ -17,7 +17,7 @@ export const Footer = () => {
                         <ul className='space-y-2 text-sm text-gray-600'>
                             <li>
                                 <a href='/about' className='hover:text-gray-900 transition-colors'>
-                                    소개
+                                    동아리 소개
                                 </a>
                             </li>
                             <li>
@@ -28,6 +28,16 @@ export const Footer = () => {
                             <li>
                                 <a href='/projects' className='hover:text-gray-900 transition-colors'>
                                     프로젝트
+                                </a>
+                            </li>
+                            <li>
+                                <a href='/notice' className='hover:text-gray-900 transition-colors'>
+                                    공지사항/소식
+                                </a>
+                            </li>
+                            <li>
+                                <a href='/board' className='hover:text-gray-900 transition-colors'>
+                                    자유게시판
                                 </a>
                             </li>
                             <li>

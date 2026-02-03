@@ -35,9 +35,22 @@ export const NavBar = () => {
             ],
         },
         { path: '/projects', label: '프로젝트' },
-        { path: '/recruitment', label: '모집안내' },
-        { path: '/contact', label: '연락처' },
-        { path: '/board', label: '게시판' },
+        {
+            path: '/board',
+            label: '커뮤니티',
+            dropdown: [
+                { path: '/notice', label: '공지사항' },
+                { path: '/board', label: '자유게시판' },
+            ],
+        },
+        {
+            path: '/recruitment',
+            label: '모집안내',
+            dropdown: [
+                { path: '/recruitment', label: '모집안내' },
+                { path: '/contact', label: '연락처' },
+            ],
+        },
     ]
 
     useEffect(() => {
@@ -108,7 +121,7 @@ export const NavBar = () => {
                                         {item.label}
                                         {item.dropdown && (
                                             <svg
-                                                className='w-3 h-3 transition-transform duration-200'
+                                                className='w-3 h-3'
                                                 fill='none'
                                                 stroke='currentColor'
                                                 viewBox='0 0 24 24'
@@ -122,9 +135,15 @@ export const NavBar = () => {
                                             </svg>
                                         )}
                                     </Link>
-                                    {item.dropdown && openDropdown === item.path && (
-                                        <div className='absolute top-full left-0 pt-1 z-50'>
-                                            <div className='w-40 bg-white rounded-lg shadow-lg border border-gray-200 overflow-hidden'>
+                                    {item.dropdown && (
+                                        <div
+                                            className={`absolute top-full left-0 pt-1 z-50 overflow-hidden transition-all duration-200 ease-out ${
+                                                openDropdown === item.path
+                                                    ? 'opacity-100 translate-y-0 max-h-60'
+                                                    : 'opacity-0 -translate-y-2 max-h-0 pointer-events-none'
+                                            }`}
+                                        >
+                                            <div className='w-40 bg-white rounded-lg shadow-lg border border-gray-200'>
                                                 {item.dropdown.map((subItem) => (
                                                     <Link
                                                         key={subItem.path}

@@ -39,7 +39,11 @@ fi
 echo "Creating announcement..."
 echo "ID: $UUID"
 
-# DynamoDB에 아이템 추가
+# Escape JSON strings using jq
+TITLE_JSON=$(echo -n "$TITLE" | jq -Rs .)
+DESCRIPTION_JSON=$(echo -n "$DESCRIPTION" | jq -Rs .)
+CONTENT_JSON=$(echo -n "$CONTENT" | jq -Rs .)
+
 aws dynamodb put-item \
     --table-name "$TABLE_NAME" \
     --item "{
@@ -47,9 +51,9 @@ aws dynamodb put-item \
         \"sk\": {\"S\": \"META\"},
         \"announcementId\": {\"S\": \"$UUID\"},
         \"type\": {\"S\": \"$TYPE\"},
-        \"title\": {\"S\": \"$TITLE\"},
-        \"description\": {\"S\": \"$DESCRIPTION\"},
-        \"content\": {\"S\": \"$CONTENT\"},
+        \"title\": {\"S\": $TITLE_JSON},
+        \"description\": {\"S\": $DESCRIPTION_JSON},
+        \"content\": {\"S\": $CONTENT_JSON},
         \"createdAt\": {\"S\": \"$TIMESTAMP\"},
         \"updatedAt\": {\"S\": \"$TIMESTAMP\"},
         \"views\": {\"N\": \"0\"},

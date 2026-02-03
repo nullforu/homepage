@@ -42,13 +42,16 @@ fi
 
 echo "Updating announcement $UUID..."
 
+# Escape JSON string using jq
+VALUE_JSON=$(echo -n "$VALUE" | jq -Rs .)
+
 # DynamoDB 아이템 수정
 aws dynamodb update-item \
     --table-name "$TABLE_NAME" \
     --key "{\"pk\": {\"S\": \"ANNOUNCEMENT#$UUID\"}, \"sk\": {\"S\": \"META\"}}" \
     --update-expression "SET #field = :val, updatedAt = :time" \
     --expression-attribute-names "{\"#field\": \"$FIELD\"}" \
-    --expression-attribute-values "{\":val\": {\"S\": \"$VALUE\"}, \":time\": {\"S\": \"$TIMESTAMP\"}}" \
+    --expression-attribute-values "{\":val\": {\"S\": $VALUE_JSON}, \":time\": {\"S\": \"$TIMESTAMP\"}}" \
     --return-values ALL_NEW > /dev/null
 
 if [ $? -eq 0 ]; then
