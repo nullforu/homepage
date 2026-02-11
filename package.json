@@ -13,8 +13,14 @@
         "format": "prettier --write ."
     },
     "dependencies": {
+        "@fullpage/react-fullpage": "^0.1.49",
+        "@studio-freight/lenis": "^1.0.42",
         "@tanstack/react-query": "^5.90.20",
+        "aos": "^2.3.4",
         "axios": "^1.13.2",
+        "fullpage.js": "^4.0.40",
+        "gsap": "^3.14.2",
+        "lenis": "^1.3.17",
         "react": "^19.0.0",
         "react-markdown": "^10.1.0",
         "react-router-dom": "^7.7.0",
