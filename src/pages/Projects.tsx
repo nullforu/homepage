@@ -1,6 +1,6 @@
 import { Layout } from '../components/Layout'
 
-const projects = [
+export const projects = [
     {
         id: 1,
         title: '세소리(Sesori)',
