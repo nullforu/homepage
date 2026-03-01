@@ -9,7 +9,7 @@ export function CurriculumSection({ disableSticky = false }: CurriculumSectionPr
             data-scroll-section
             data-bg='curriculum'
         >
-            <div className='mx-auto w-full max-w-5xl px-10 sm:px-12 md:px-16 lg:px-20 xl:max-w-6xl' data-scroll-content>
+            <div className='mx-auto w-full max-w-5xl px-6 sm:px-12 md:px-16 lg:px-20 xl:max-w-6xl' data-scroll-content>
                 <p className='text-xs uppercase tracking-[0.35em] text-slate-500'>Curriculum</p>
                 <h2 className='mt-6 text-3xl font-bold text-slate-900 md:text-5xl'>커리큘럼</h2>
                 <div className='mt-12 grid gap-10 md:grid-cols-3'>

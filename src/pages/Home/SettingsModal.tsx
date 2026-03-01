@@ -1,4 +1,5 @@
 import { useEffect } from 'react'
+import { useDevice } from '../../contexts/DeviceContext'
 
 type SettingsModalProps = {
     isOpen: boolean
@@ -8,6 +9,9 @@ type SettingsModalProps = {
 }
 
 export function SettingsModal({ isOpen, onClose, disableAnimations, onToggleAnimations }: SettingsModalProps) {
+    const { isMobile } = useDevice()
+    const effectiveDisableAnimations = disableAnimations || isMobile
+
     useEffect(() => {
         if (isOpen) {
             document.body.style.overflow = 'hidden'
@@ -68,20 +72,29 @@ export function SettingsModal({ isOpen, onClose, disableAnimations, onToggleAnim
                                 마우스 패럴랙스, 스크롤 애니메이션과 섹션 고정, 애니메이션 효과 등을 비활성화합니다.
                                 기기의 GPU 성능이 낮거나 버벅임이 느껴질 때 활성화하세요.
                             </div>
+                            {isMobile ? (
+                                <div className='mt-2 text-sm text-red-500'>
+                                    모바일에서는 자동으로 애니메이션이 비활성화됩니다.
+                                </div>
+                            ) : null}
                         </div>
-                        <button
-                            onClick={onToggleAnimations}
-                            className={`ml-4 flex h-7 w-12 items-center rounded-full transition-colors ${
-                                disableAnimations ? 'bg-slate-900' : 'bg-slate-300'
-                            }`}
-                            aria-label='애니메이션 토글'
-                        >
-                            <div
-                                className={`h-5 w-5 rounded-full bg-white shadow-md transition-transform ${
-                                    disableAnimations ? 'translate-x-6' : 'translate-x-1'
-                                }`}
-                            />
-                        </button>
+                        {!isMobile && (
+                            <button
+                                onClick={isMobile ? undefined : onToggleAnimations}
+                                disabled={isMobile}
+                                className={`ml-4 flex h-7 w-12 items-center rounded-full transition-colors ${
+                                    effectiveDisableAnimations ? 'bg-slate-900' : 'bg-slate-300'
+                                } ${isMobile ? 'cursor-not-allowed opacity-60' : ''}`}
+                                aria-label='애니메이션 토글'
+                                aria-disabled={isMobile}
+                            >
+                                <div
+                                    className={`h-5 w-5 rounded-full bg-white shadow-md transition-transform ${
+                                        effectiveDisableAnimations ? 'translate-x-6' : 'translate-x-1'
+                                    }`}
+                                />
+                            </button>
+                        )}
                     </div>
                     <div>
                         <button

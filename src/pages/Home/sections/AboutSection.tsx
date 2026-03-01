@@ -9,7 +9,7 @@ export function AboutSection({ disableSticky = false }: AboutSectionProps) {
             data-scroll-section
             data-bg='about'
         >
-            <div className='mx-auto w-full max-w-5xl px-10 sm:px-12 md:px-16 lg:px-20 xl:max-w-6xl' data-scroll-content>
+            <div className='mx-auto w-full max-w-5xl px-6 sm:px-12 md:px-16 lg:px-20 xl:max-w-6xl' data-scroll-content>
                 <p className='text-xs uppercase tracking-[0.35em] text-slate-500'>About</p>
                 <h2 className='mt-6 text-3xl font-bold text-slate-900 md:text-5xl'>언제까지 개발만 하고</h2>
                 <h2 className='mt-4 text-3xl font-bold text-slate-900 md:text-5xl'>
@@ -46,7 +46,7 @@ export function AboutSection({ disableSticky = false }: AboutSectionProps) {
                     </div>
 
                     <div>
-                        <h3 className='text-lg font-semibold text-slate-900'>클라우드와 개발에 진심인</h3>
+                        <h3 className='text-lg font-semibold text-slate-900'>네이티브 클라우드와 개발에 진심인</h3>
                         <ul className='mt-5 list-disc space-y-2 pl-5 text-slate-700'>
                             <li className='leading-relaxed'>
                                 세명컴퓨터고등학교 전공 심화 동아리 Null4U와 함께

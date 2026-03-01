@@ -51,20 +51,17 @@ export const Home = () => {
                     <RecruitmentSection disableSticky={settings.disableAnimations} />
                 </SectionWrap>
 
-                <SectionWrap id='quote' heightClassName='h-screen' disableSticky={settings.disableAnimations}>
+                <SectionWrap id='quote' disableSticky={settings.disableAnimations}>
                     <section
                         className={`${settings.disableAnimations ? '' : 'sticky top-0'} flex min-h-screen w-full items-center px-0 py-16 md:py-0 text-center`}
                         data-scroll-section
                     >
-                        <div
-                            className='mx-auto w-full max-w-5xl px-10 sm:px-12 md:px-16 lg:px-20 xl:max-w-6xl'
-                            data-scroll-content
-                        >
-                            <p className='text-3xl xl:text-4xl font-medium text-slate-900'>
+                        <div className='mx-auto w-full max-w-5xl px-10 sm:px-12 md:px-16 lg:px-20 xl:max-w-max'>
+                            <p className='text-3xl xl:text-4xl font-medium font-mono text-slate-900'>
                                 " There is no compression algorithm for experience. "
                             </p>
-                            <p className='mt-4 text-xl xl:text-2xl text-slate-600'>경험을 압축하는 알고리즘이 없다.</p>
-                            <p className='mt-8 xl:mt-12 text-xl xl:text-2xl text-slate-700 text-end'>
+                            <p className='mt-6 text-xl xl:text-2xl text-slate-600'>경험을 압축하는 알고리즘이 없다.</p>
+                            <p className='mt-8 xl:mt-12 text-xl xl:text-2xl text-slate-700 text-center md:text-end'>
                                 — Amazon CEO, Andy Jassy
                             </p>
                         </div>

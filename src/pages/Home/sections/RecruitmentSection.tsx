@@ -11,7 +11,7 @@ export function RecruitmentSection({ disableSticky = false }: RecruitmentSection
             data-scroll-section
             data-bg='recruitment'
         >
-            <div className='mx-auto w-full max-w-5xl px-10 sm:px-12 md:px-16 lg:px-20 xl:max-w-6xl' data-scroll-content>
+            <div className='mx-auto w-full max-w-5xl px-6 sm:px-12 md:px-16 lg:px-20 xl:max-w-6xl' data-scroll-content>
                 <p className='text-xs uppercase tracking-[0.35em] text-slate-500'>Recruitment</p>
                 <h2 className='mt-6 text-3xl font-bold text-slate-900 md:text-5xl'>모집 안내</h2>
                 <p className='mt-6 text-slate-700'>새로운 여정을 함께할 멤버를 찾습니다.</p>

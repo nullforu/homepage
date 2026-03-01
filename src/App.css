@@ -117,3 +117,64 @@ table {
         stroke-dashoffset: 0;
     }
 }
+
+.hero-null4u {
+    background: linear-gradient(
+        110deg,
+        var(--color-amber-100),
+        var(--color-yellow-300),
+        var(--color-amber-400),
+        var(--color-amber-100)
+    );
+
+    background-size: 350% 100%;
+    animation: slide 2s ease-in-out infinite alternate;
+}
+
+@keyframes slide {
+    from {
+        background-position: 0% 50%;
+    }
+    to {
+        background-position: 100% 50%;
+    }
+}
+
+.wave-emoji {
+    transform-box: fill-box;
+    transform-origin: 100% 100%;
+    animation: wave 2.8s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+@keyframes wave {
+    0% {
+        transform: rotate(0deg);
+    }
+    6% {
+        transform: rotate(-0.6deg);
+    }
+    16% {
+        transform: rotate(5deg);
+    }
+    26% {
+        transform: rotate(-3.2deg);
+    }
+    36% {
+        transform: rotate(2.4deg);
+    }
+    46% {
+        transform: rotate(-1.6deg);
+    }
+    56% {
+        transform: rotate(0.8deg);
+    }
+    62% {
+        transform: rotate(-0.3deg);
+    }
+    68% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}

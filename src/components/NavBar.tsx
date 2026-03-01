@@ -82,17 +82,17 @@ export const NavBar = () => {
         <>
             <nav
                 className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-                    isAtTop ? 'bg-transparent' : 'md:pt-4'
+                    isAtTop ? 'bg-transparent' : 'md:px-10 md:pt-4'
                 }`}
             >
                 <div
-                    className={`max-w-6xl mx-auto px-4 border transition-all duration-300 ${
+                    className={`max-w-6xl mx-auto px-8 border transition-all duration-300 ${
                         isAtTop
                             ? 'border-transparent md:rounded-none shadow-none bg-transparent'
                             : 'border-transparent md:border-gray-200 md:rounded-2xl md:shadow-md bg-white/70 backdrop-blur-md supports-[backdrop-filter]:bg-white/10'
                     }`}
                 >
-                    <div className='flex items-center justify-between h-14'>
+                    <div className='flex items-center justify-between h-12'>
                         <div className='flex items-center gap-1'>
                             <button
                                 className='md:hidden p-2 rounded-lg hover:bg-gray-50 transition-colors'

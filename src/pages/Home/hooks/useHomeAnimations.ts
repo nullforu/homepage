@@ -2,13 +2,14 @@ import { useRef } from 'react'
 import { useScrollAnimation } from './useScrollAnimation'
 import { useMouseParallax } from './useMouseParallax'
 import { useKeyboardNavigation } from './useKeyboardNavigation'
+import { useDevice } from '../../../contexts/DeviceContext'
 
 export function useHomeAnimations(disableAnimations = false) {
     const bgGridRef = useRef<HTMLDivElement>(null!)
     const bgGeoRef = useRef<HTMLDivElement>(null!)
 
-    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches
-    const disabled = reduceMotion || disableAnimations
+    const { isMobile } = useDevice()
+    const disabled = disableAnimations || isMobile
 
     const lenisRef = useScrollAnimation({
         bgGridRef,
