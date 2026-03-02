@@ -52,7 +52,7 @@ export function HeroSection({ disableSticky = false }: HeroSectionProps) {
                         </span>
                         입니다.
                     </p>
-                    <div className='mt-10 flex flex-wrap gap-3'>
+                    <div className='mt-10 flex flex-wrap gap-3 items-center'>
                         <Link
                             to='/about'
                             className='rounded-xl bg-slate-900 px-6 py-3 text-sm font-semibold text-white transition hover:-translate-y-[1px]'
@@ -65,6 +65,12 @@ export function HeroSection({ disableSticky = false }: HeroSectionProps) {
                         >
                             모집 안내
                         </Link>
+                        <img
+                            src='/images/github.svg'
+                            alt='GitHub'
+                            className='ml-4 h-10 w-auto transition hover:-translate-y-[1px] cursor-pointer'
+                            onClick={() => window.open('https://github.com/nullforu', '_blank')}
+                        />
                     </div>
                 </div>
             </div>

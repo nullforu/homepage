@@ -92,7 +92,7 @@ export const NavBar = () => {
                             : 'border-transparent md:border-gray-200 md:rounded-2xl md:shadow-md bg-white/70 backdrop-blur-md supports-[backdrop-filter]:bg-white/10'
                     }`}
                 >
-                    <div className='flex items-center justify-between h-12'>
+                    <div className='flex items-center justify-between h-10'>
                         <div className='flex items-center gap-1'>
                             <button
                                 className='md:hidden p-2 rounded-lg hover:bg-gray-50 transition-colors'
@@ -111,7 +111,7 @@ export const NavBar = () => {
                                 to='/'
                                 className='text-lg font-semibold hover:text-gray-700 transition-colors hidden md:block'
                             >
-                                <img src='/images/logo_dark_cropped.svg' alt='Null4U' className='h-6 w-auto' />
+                                <img src='/images/logo_dark_cropped.svg' alt='Null4U' className='h-5 w-auto' />
                             </Link>
                         </div>
 
